@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+	include head.jade
+	body
+		include menu.jade
+		#fullpage
+			include sectionTour.jade
+			include sectionReasons.jade
+			include sectionGuide.jade
+			include sectionTourOptions.jade
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+		script(src='../js/jquery.fullpage.js')
+		script.
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					menu: "#menu"
+				});
+			});
+
