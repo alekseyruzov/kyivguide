@@ -3,16 +3,15 @@ $color_0: rgba(255, 255, 255, 0.75);
 $color_btn: #222;
 $color_text: #fff;
 $color_shadow: #000;
-$color_bg: rgba(0, 0, 0, 0.3);
-$color_hover_bg: #ccc;
-$color_hover_text: #222;
+$color_bg: rgba(0, 0, 0, 0.7);
+$color_hover_bg: #ffffff1a;
+$color_hover_text: #69909C;
 
 .slicknav_menu {
 	position: absolute;
 	width: 100%;
 	z-index: 1000;
 	background: $color_bg;
-	padding: 5px;
 	text-align: center;
 	text-transform: uppercase;
 	* {
@@ -21,26 +20,17 @@ $color_hover_text: #222;
 	.slicknav_menutxt {
 		color: $color_text;
 		font-weight: bold;
-		text-shadow: 0 1px 3px $color_shadow;
 	}
 	.slicknav_icon-bar {
 		background-color: $color_text;
 	}
 }
 .slicknav_btn {
-	margin: 5px 5px 6px;
 	text-decoration: none;
-	text-shadow: 0 1px 1px $color_0;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	background-color: $color_btn;
 }
 .slicknav_nav {
-	color: $color_text;
 	margin: 0;
 	padding: 0;
-	font-size: 0.875em;
 	list-style: none;
 	overflow: hidden;
 	ul {
@@ -53,22 +43,16 @@ $color_hover_text: #222;
 		padding: 5px 10px;
 		margin: 2px 5px;
 		&:hover {
-			-webkit-border-radius: 6px;
-			-moz-border-radius: 6px;
-			border-radius: 6px;
 			background: $color_hover_bg;
 			color: $color_text;
 		}
 	}
 	a {
-		padding: 5px 10px;
-		margin: 2px 5px;
+		padding: 10px 0;
+		margin: 0 5px;
 		text-decoration: none;
 		color: $color_text;
 		&:hover {
-			-webkit-border-radius: 6px;
-			-moz-border-radius: 6px;
-			border-radius: 6px;
 			background: $color_hover_bg;
 			color: $color_hover_text;
 		}

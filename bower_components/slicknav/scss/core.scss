@@ -3,7 +3,7 @@
 	display: block;
 	vertical-align: middle;
 	float: right;
-	padding: 0.438em 0.625em 0.438em 0.625em;
+	padding: 1em;
 	line-height: 1.125em;
 	cursor: pointer;
 	.slicknav_icon-bar + .slicknav_icon-bar {
@@ -36,14 +36,9 @@
 	}
 	.slicknav_icon-bar {
 		display: block;
-		width: 1.125em;
-		height: 0.125em;
-		-webkit-border-radius: 1px;
-		-moz-border-radius: 1px;
+		width: 1.5em;
+		height: 0.2em;
 		border-radius: 1px;
-		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 	}
 	&:before {
 		content: " ";
