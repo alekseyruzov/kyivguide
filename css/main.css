@@ -1,5 +1,53 @@
-path, polygon {
-  fill: #222;
+#menu {
+  display: none;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+#menu li a {
+  display: block;
+  padding: 5px 15px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#menu li.active {
+  background: rgba(0, 0, 0, 0.15);
+}
+#menu li.active a {
+  color: #fff;
+}
+
+#menu-icon {
+  position: fixed;
+  right: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+nav:hover #menu {
+  display: block;
+}
+
+.container {
+  border: 1px solid red;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .bgimg {
@@ -11,48 +59,13 @@ path, polygon {
 .inverted {
   color: #fff;
 }
-
 .inverted path, .inverted polygon {
   fill: #fff;
-}
-
-#menu {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  top: 70px;
-}
-
-#menu li {
-  display: inline-block;
-  margin: 0 5px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-#menu li a {
-  display: block;
-  padding: 5px 15px;
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-#menu li.active {
-  background: rgba(0, 0, 0, 0.15);
-}
-
-#menu li.active a {
-  color: #fff;
 }
 
 .section {
   text-align: center;
 }
-
 .section .reasons-headline {
   font-weight: 100;
   position: absolute;
@@ -67,14 +80,8 @@ path, polygon {
 }
 
 .tour {
-  background-image: url("../img/section1-lg-background.jpg");
+  background-image: url("../images/section1-lg-background.jpg");
 }
-
-.tour h2 {
-  font-size: 10rem;
-  font-weight: 100;
-}
-
 .tour .scrolldown-icon {
   position: absolute;
   left: 50%;
@@ -83,43 +90,44 @@ path, polygon {
 }
 
 .guide {
-  background-image: url("../img/section3-lg-background.jpg");
+  background-image: url("../images/section3-lg-background.jpg");
 }
 
 .slide p {
   max-width: 50%;
 }
-
 .slide * {
   margin-left: auto;
   margin-right: auto;
 }
 
 .reason1 {
-  background-image: url("../img/section2-reason1-lg-background.jpg");
+  background-image: url("../images/section2-reason1-lg-background.jpg");
 }
 
 .reason2 {
-  background-image: url("../img/section2-reason2-lg-background.jpg");
+  background-image: url("../images/section2-reason2-lg-background.jpg");
 }
 
 .reason3 {
-  background-image: url("../img/section2-reason3-lg-background.jpg");
+  background-image: url("../images/section2-reason3-lg-background.jpg");
 }
 
 .reason4 {
-  background-image: url("../img/section2-reason4-lg-background.jpg");
+  background-image: url("../images/section2-reason4-lg-background.jpg");
 }
 
 .reason5 {
-  background-image: url("../img/section2-reason5-lg-background.jpg");
+  background-image: url("../images/section2-reason5-lg-background.jpg");
 }
 
 .reason6 {
-  background-image: url("../img/section2-reason6-lg-background.png");
+  background-image: url("../images/section2-reason6-lg-background.png");
   background-size: 70%;
 }
 
 .reason7 {
-  background-image: url("../img/section2-reason7-lg-background.jpg");
+  background-image: url("../images/section2-reason7-lg-background.jpg");
 }
+
+/*# sourceMappingURL=main.css.map */

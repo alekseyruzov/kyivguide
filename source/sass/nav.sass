@@ -1,0 +1,41 @@
+#menu
+	display: none
+	list-style-type: none
+	// position: fixed	
+	text-align: center
+	padding: 0
+	margin: 0
+	background: rgba(0,0,0,.4)
+
+	li
+		//margin: 0 5px
+		//border-radius: 5px
+		//background: rgba(255,255,255,.5)
+
+		a
+			display: block
+			padding: 5px 15px
+			color: #000
+			text-transform: uppercase
+			text-decoration: none
+
+		&.active
+			background: rgba(0,0,0,.15)
+			a
+				color: $color-inverted
+
+#menu-icon
+	position: fixed
+	right: 0
+	color: #fff
+	text-decoration: none
+	font-size: 3rem
+
+nav
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 999
+	&:hover
+		#menu
+			display: block

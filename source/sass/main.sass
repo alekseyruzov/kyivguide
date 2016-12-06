@@ -1,0 +1,106 @@
+@import '../../bower_components/susy/sass/susy'
+$susy: (columns: 12, gutters: 1/4, output: isolate)
+
+@import vars
+@import nav
+
+
+
+.container
+	border: 1px solid red
+	@include container(80%)
+	
+
+
+
+
+
+// body
+//     color: #222;
+//     font-family: 'Roboto',sans-serif
+//     font-size: 1.8em
+//     font-weight: 300
+
+//-------------
+// h1
+// 	font-family: 'Rubik', sans-serif
+// 	font-size: 24rem
+
+
+
+
+// Base
+// path, polygon
+// 	fill: #222
+
+//////////////////////////Background fix
+
+.bgimg
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+
+//////////////////////////Color inversion
+.inverted
+	color: $color-inverted
+	path, polygon
+		fill: #fff
+
+
+
+
+
+
+.section
+	text-align: center
+
+	.reasons-headline
+		//font-size: 1.4em
+		font-weight: 100
+		position: absolute
+		top: 130px
+		left: 50%
+		margin-top: 0
+		margin-bottom: 0
+		margin-left: -250px
+		display: block
+		width: 500px
+		z-index: 1000
+	
+.tour
+	background-image: url('../images/section1-lg-background.jpg')
+
+	.scrolldown-icon
+		position: absolute
+		left: 50%
+		bottom: 15px
+		margin-left: -15px
+
+.guide
+	background-image: url('../images/section3-lg-background.jpg')
+		
+
+//////////////////////////Slides
+.slide
+	p
+		max-width: 50%
+	*
+		margin-left: auto
+		margin-right: auto
+
+.reason1
+	background-image: url('../images/section2-reason1-lg-background.jpg')
+.reason2
+	background-image: url('../images/section2-reason2-lg-background.jpg')
+.reason3
+	background-image: url('../images/section2-reason3-lg-background.jpg')
+.reason4
+	background-image: url('../images/section2-reason4-lg-background.jpg')
+.reason5
+	background-image: url('../images/section2-reason5-lg-background.jpg')	
+.reason6
+	background-image: url('../images/section2-reason6-lg-background.png')
+	background-size: 70%
+.reason7
+	background-image: url('../images/section2-reason7-lg-background.jpg')
