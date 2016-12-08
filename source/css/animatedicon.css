@@ -1,0 +1,81 @@
+.hand {
+  background: #fff;
+  width: 5px;
+  height: 16px;
+  border-radius: 20px;
+  position: relative;
+  left: -5px;
+  margin-bottom: 17px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-animation: handAnim 1.2s infinite;
+          animation: handAnim 1.2s infinite; }
+  .hand:after {
+    content: "";
+    background: #fff;
+    width: 17px;
+    height: 18px;
+    border-radius: 4px 8px 38px 15px;
+    -webkit-transform: rotate(6deg) skewY(10deg);
+            transform: rotate(6deg) skewY(10deg);
+    position: absolute;
+    top: 13px;
+    left: -1px; }
+  .hand:before {
+    content: "";
+    background: #fff;
+    width: 6px;
+    height: 17px;
+    border-radius: 2px 40px 20px 20px;
+    position: absolute;
+    top: 12px;
+    left: -6px;
+    -webkit-transform: rotate(-38deg);
+            transform: rotate(-38deg); }
+  .hand .circle {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    opacity: 0.5;
+    -webkit-animation: circleAnim 1.2s infinite 2.1s;
+            animation: circleAnim 1.2s infinite 2.1s; }
+
+@-webkit-keyframes handAnim {
+  0% {
+    top: 20px;
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    top: -20px;
+    opacity: 0; } }
+
+@keyframes handAnim {
+  0% {
+    top: 20px;
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    top: -20px;
+    opacity: 0; } }
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0; } }
+@keyframes circleAnim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0; } }
