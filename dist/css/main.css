@@ -1,21 +1,34 @@
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   font-weight: 300;
   color: #222;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 h1 {
   font-family: "Rubik", sans-serif;
-  font-size: 110px;
-  margin: -0.6em 0 0;
+  font-size: 123px;
+  margin: 0;
 }
 
+@media (min-width: 30em) {
+  h1 {
+    font-size: 177px;
+  }
+}
 h2 {
   font-family: "Roboto Slab", serif;
   font-size: 26px;
-  font-weight: 100;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-top: 0;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
 }
 
 #menu {
@@ -121,6 +134,26 @@ nav:hover #menu {
     opacity: 0;
   }
 }
+.deviceRotate {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: tomato;
+  z-index: 1100;
+  padding-top: 7em;
+  color: #fff;
+  fill: #fff;
+  display: none;
+}
+@media screen and (max-height: 30em) and (orientation: landscape) {
+  .deviceRotate {
+    display: block;
+  }
+}
+.deviceRotate__icon, .deviceRotate__text {
+  text-align: center;
+}
+
 .container {
   max-width: 90%;
   margin-left: auto;
@@ -130,6 +163,24 @@ nav:hover #menu {
   content: " ";
   display: block;
   clear: both;
+}
+
+.contactIcons {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactIcons:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.contactIcons__icon {
+  box-sizing: border-box;
+  width: 16.6666666667%;
+  float: left;
+  padding-left: 1.6666666667%;
+  padding-right: 1.6666666667%;
 }
 
 .bgimg {
@@ -145,71 +196,7 @@ nav:hover #menu {
   fill: #fff;
 }
 
-.section {
-  text-align: center;
-}
-.section .reasons-headline {
-  font-weight: 100;
-  position: absolute;
-  top: 130px;
-  left: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: -250px;
-  display: block;
-  width: 500px;
-  z-index: 1000;
-}
-
 .tour {
   background-image: url("../images/section1-lg-background.jpg");
+  text-align: center;
 }
-.tour .scrolldown-icon {
-  position: absolute;
-  left: 50%;
-  bottom: 15px;
-  margin-left: -15px;
-}
-
-.guide {
-  background-image: url("../images/section3-lg-background.jpg");
-}
-
-.slide p {
-  max-width: 50%;
-}
-.slide * {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.reason1 {
-  background-image: url("../images/section2-reason1-lg-background.jpg");
-}
-
-.reason2 {
-  background-image: url("../images/section2-reason2-lg-background.jpg");
-}
-
-.reason3 {
-  background-image: url("../images/section2-reason3-lg-background.jpg");
-}
-
-.reason4 {
-  background-image: url("../images/section2-reason4-lg-background.jpg");
-}
-
-.reason5 {
-  background-image: url("../images/section2-reason5-lg-background.jpg");
-}
-
-.reason6 {
-  background-image: url("../images/section2-reason6-lg-background.png");
-  background-size: 70%;
-}
-
-.reason7 {
-  background-image: url("../images/section2-reason7-lg-background.jpg");
-}
-
-/*# sourceMappingURL=main.css.map */

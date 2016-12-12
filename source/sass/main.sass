@@ -1,17 +1,44 @@
 @import '../../bower_components/susy/sass/susy'
-$susy: (columns: 12, gutters: 1/4, output: isolate)
+$susy: (columns: 12, gutters: 1/4, output: isolate, gutter-position: inside,)
+
+@import '../../bower_components/breakpoint-sass/stylesheets/breakpoint'
+@include breakpoint-set('to ems', true)
+
+$small: 480px
+$small-land: screen (max-height $small) (orientation landscape)
+$medium: 768px
+$large: 1280px
 
 @import vars
 @import typography
 @import nav
 @import animatedicon
 
+// *** Horizontal orientation warning ***
+.deviceRotate
+	position: absolute
+	height: 100%
+	width: 100%
+	background: tomato
+	z-index: 1100
+	padding-top: 7em
+	color: #fff
+	fill: #fff
+	display: none
+	@include breakpoint($small-land)
+		display: block
+	&__icon, &__text
+		text-align: center
+
 
 
 .container
-	@include container(90%)
-	
+	@include container(90%)	
 
+.contactIcons
+	@include container(100%)
+	&__icon
+		@include span(1 of 6)
 
 
 
@@ -42,57 +69,26 @@ $susy: (columns: 12, gutters: 1/4, output: isolate)
 
 
 
-
-
-.section
-	text-align: center
-
-	.reasons-headline
-		//font-size: 1.4em
-		font-weight: 100
-		position: absolute
-		top: 130px
-		left: 50%
-		margin-top: 0
-		margin-bottom: 0
-		margin-left: -250px
-		display: block
-		width: 500px
-		z-index: 1000
-	
+// *** Sections ***
 .tour
 	background-image: url('../images/section1-lg-background.jpg')
+	text-align: center
 
-	.scrolldown-icon
-		position: absolute
-		left: 50%
-		bottom: 15px
-		margin-left: -15px
-
-.guide
-	background-image: url('../images/section3-lg-background.jpg')
+// .guide
+// 	background-image: url('../images/section3-lg-background.jpg')
 		
-
-//////////////////////////Slides
-.slide
-	p
-		max-width: 50%
-	*
-		margin-left: auto
-		margin-right: auto
-
-.reason1
-	background-image: url('../images/section2-reason1-lg-background.jpg')
-.reason2
-	background-image: url('../images/section2-reason2-lg-background.jpg')
-.reason3
-	background-image: url('../images/section2-reason3-lg-background.jpg')
-.reason4
-	background-image: url('../images/section2-reason4-lg-background.jpg')
-.reason5
-	background-image: url('../images/section2-reason5-lg-background.jpg')	
-.reason6
-	background-image: url('../images/section2-reason6-lg-background.png')
-	background-size: 70%
-.reason7
-	background-image: url('../images/section2-reason7-lg-background.jpg')
+// .reason1
+// 	background-image: url('../images/section2-reason1-lg-background.jpg')
+// .reason2
+// 	background-image: url('../images/section2-reason2-lg-background.jpg')
+// .reason3
+// 	background-image: url('../images/section2-reason3-lg-background.jpg')
+// .reason4
+// 	background-image: url('../images/section2-reason4-lg-background.jpg')
+// .reason5
+// 	background-image: url('../images/section2-reason5-lg-background.jpg')	
+// .reason6
+// 	background-image: url('../images/section2-reason6-lg-background.png')
+// 	background-size: 70%
+// .reason7
+// 	background-image: url('../images/section2-reason7-lg-background.jpg')

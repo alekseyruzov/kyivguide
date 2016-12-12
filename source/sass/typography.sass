@@ -1,5 +1,5 @@
 @import '../../bower_components/modular-scale/stylesheets/modular-scale'
-$ms-base: 16px
+$ms-base: 14px, 16px, 18px
 $ms-ratio: $golden
 
 body
@@ -8,13 +8,20 @@ body
     line-height: 1.4
     font-weight: 300
     color: $text-color
+    hyphens: auto
 
 h1
     font-family: 'Rubik', sans-serif
-    font-size: ms(4)
-    margin: -0.6em 0 0
+    font-size: ms(14)
+    margin: 0
 
+@include breakpoint($small)
+    h1
+        font-size: ms(16)
 h2
     font-family: 'Roboto Slab', serif
-    font-size: ms(1)
-    font-weight: 100
+    font-size: ms(4)
+    font-weight: 300
+    line-height: 1.2
+    margin-top: 0
+    hyphens: none
