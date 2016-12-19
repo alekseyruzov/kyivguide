@@ -3640,83 +3640,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/source\/jade\/sectionReasons__reason1.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason1.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason1.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/source\/jade\/sectionReasons__reason2.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason2.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason2.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/source\/jade\/sectionReasons__reason3.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason3.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason3.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/source\/jade\/sectionReasons__reason4.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason4.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason4.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/source\/jade\/sectionReasons__reason5.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason5.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason5.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/source\/jade\/sectionReasons__reason6.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason6.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason6.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/source\/jade\/sectionReasons__reason7.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason7.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sectionReasons__reason7.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
 	"\/source\/jade\/sectionTour.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -3731,7 +3654,7 @@
 	"\/source\/jade\/sectionTourOptions.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/sectionTourOptions.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/sectionTourOptions.html",
