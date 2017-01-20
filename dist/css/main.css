@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*--- sectionTypography --- */
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100,300|Rubik:300,400,700&subset=cyrillic");
 body {
   font-family: "Roboto", sans-serif;
@@ -8,6 +10,7 @@ body {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+  text-align: justify;
 }
 
 h1 {
@@ -15,62 +18,92 @@ h1 {
   font-size: 123px;
   margin: 0;
   line-height: 1.2;
+  color: #fff;
 }
-
 @media (min-width: 30em) {
   h1 {
     font-size: 177px;
   }
 }
+@media (min-width: 48em) {
+  h1 {
+    font-size: 251px;
+  }
+}
+
 h2 {
   font-family: "Rubik", sans-serif;
   font-size: 26px;
   font-weight: 400;
   line-height: 1.2;
+  text-align: center;
   margin-top: 0.5em;
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
 }
 
-#menu {
-  display: none;
-  list-style-type: none;
-  text-align: center;
+ul {
   padding: 0;
-  margin: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-#menu li a {
-  display: block;
-  padding: 5px 15px;
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-#menu li.active {
-  background: rgba(0, 0, 0, 0.15);
-}
-#menu li.active a {
-  color: #fff;
+  list-style-type: none;
 }
 
-#menu-icon {
-  position: fixed;
-  right: 0;
-  color: #fff;
-  text-decoration: none;
-  font-size: 3rem;
+q {
+  quotes: "«" "»";
 }
 
-nav {
-  position: fixed;
-  top: 0;
+.question {
+  color: #fff;
+  font-size: 26px;
+}
+
+/*----- Utility ----- */
+.deviceRotate {
+  position: absolute;
+  height: 100%;
   width: 100%;
-  z-index: 999;
+  background: tomato;
+  z-index: 1100;
+  padding-top: 7em;
+  color: #fff;
+  fill: #fff;
+  display: none;
 }
-nav:hover #menu {
+@media screen and (max-height: 30em) and (orientation: landscape) {
+  .deviceRotate {
+    display: block;
+  }
+}
+.deviceRotate__icon, .deviceRotate__text {
+  text-align: center;
+}
+
+.slide, .tour {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 4em;
+}
+.container:after {
+  content: " ";
   display: block;
+  clear: both;
+}
+@media (min-width: 48em) {
+  .container {
+    top: 10em;
+  }
+}
+
+.txtCenter {
+  text-align: center;
 }
 
 .arrow-icon {
@@ -136,39 +169,149 @@ nav:hover #menu {
     opacity: 0;
   }
 }
-.deviceRotate {
-  position: absolute;
-  height: 100%;
+/*----- End of Utility ----- */
+/*----- Nav ----- */
+.slicknav_menu, #menu {
+  position: fixed;
   width: 100%;
-  background: tomato;
-  z-index: 1100;
-  padding-top: 7em;
-  color: #fff;
-  fill: #fff;
-  display: none;
+  z-index: 1000;
+  text-align: center;
+  text-transform: uppercase;
+  list-style-type: none;
 }
-@media screen and (max-height: 30em) and (orientation: landscape) {
-  .deviceRotate {
+
+@media (min-width: 48em) {
+  .slicknav_menu {
+    display: none;
+  }
+}
+
+#menu {
+  top: 5em;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 48em) {
+  #menu {
     display: block;
   }
 }
-.deviceRotate__icon, .deviceRotate__text {
+#menu .menu__item {
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+#menu .menu__item a {
+  display: block;
+  padding: 5px 15px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#menu .menu__item.active {
+  background: rgba(0, 0, 0, 0.15);
+}
+#menu .menu__item.active a {
+  color: #fff;
+}
+
+#menu-icon {
+  position: fixed;
+  right: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+/*----- Section "Tour" ----- */
+.tour {
+  background-image: url("../images/section1-lg-background.jpg");
   text-align: center;
 }
 
-.container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 3em;
+/*----- Section "Reasons" ----- */
+@media (min-width: 48em) {
+  .reason1 {
+    background-image: url("../images/section2-reason1-lg-background.jpg");
+  }
+
+  .reason2 {
+    background-image: url("../images/section2-reason2-lg-background.jpg");
+  }
+
+  .reason3 {
+    background-image: url("../images/section2-reason3-lg-background.jpg");
+  }
+
+  .reason4 {
+    background-image: url("../images/section2-reason4-lg-background.jpg");
+  }
+
+  .reason5 {
+    background-image: url("../images/section2-reason5-lg-background.jpg");
+  }
+
+  .reason6 {
+    background-image: url("../images/section2-reason6-lg-background.png");
+    background-size: 70%;
+  }
+
+  .reason7 {
+    background-image: url("../images/section2-reason7-lg-background.jpg");
+  }
+
+  .guide {
+    background-image: url("../images/section3-lg-background.jpg");
+  }
 }
-.container:after {
-  content: " ";
-  display: block;
-  clear: both;
+.priceTable__item {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
+.priceAmount {
+  float: right;
+  color: #0bb8d7;
+  font-size: 18px;
+}
+
+.priceTable__itemDinner {
+  background-image: url("../images/icon-bill.svg");
+}
+
+.priceTable__itemMuseum {
+  background-image: url("../images/icon-museum.svg");
+}
+
+.priceTable__itemSubway {
+  background-image: url("../images/icon-subway.svg");
+}
+
+.priceTable__itemCoffee {
+  background-image: url("../images/icon-coffee.svg");
+}
+
+.priceTable__itemTaxi {
+  background-image: url("../images/icon-taxi.svg");
+}
+
+.priceTable__itemCocktail {
+  background-image: url("../images/icon-cocktail.svg");
+}
+
+.entertainmentList__item {
+  margin-bottom: 5px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/*----- Section "Guide" ----- */
 .contactIcons {
   max-width: 100%;
   margin-left: auto;
@@ -187,20 +330,67 @@ nav:hover #menu {
   padding-right: 1.6666666667%;
 }
 
-.bgimg {
-  background-size: cover;
+/*----- Section "Tour options" ----- */
+.tourDetails {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+.tourDetails:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.tourDetails__item {
+  box-sizing: border-box;
+  width: 20%;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+  white-space: nowrap;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 0;
+  background-size: 85%;
+  padding-top: 55px;
 }
 
-.inverted {
-  color: #fff;
-}
-.inverted path, .inverted polygon {
-  fill: #fff;
+.tourDetails__itemHours {
+  background-image: url("../images/icon-clock.svg");
 }
 
-.tour {
-  background-image: url("../images/section1-lg-background.jpg");
-  text-align: center;
+.tourDetails__itemDistance {
+  background-image: url("../images/icon-distance.svg");
+}
+
+.tourDetails__itemFoot {
+  background-image: url("../images/icon-footstep.svg");
+}
+
+.tourDetails__itemCar {
+  background-image: url("../images/icon-car.svg");
+}
+
+.tourDetails__itemCost {
+  background-image: url("../images/icon-wallet.svg");
+}
+
+.tourOptions__nameBottomline {
+  margin-top: -15px;
+  font-size: 16px;
+}
+
+/*----- Section "Feedback" ----- */
+.feedback__photo {
+  border-radius: 50%;
+  width: 6em;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.feedback__name {
+  font-size: 16px;
+  font-style: italic;
 }

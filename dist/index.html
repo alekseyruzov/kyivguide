@@ -31,17 +31,17 @@
       </div>
     </div>
     <ul id="menu">
-      <li data-menuanchor="tour"><a href="#tour">Kyiv tour</a></li>
-      <li data-menuanchor="reasons"><a href="#reasons">Why go?</a></li>
-      <li data-menuanchor="guide"><a href="#guide">The guide</a></li>
-      <li data-menuanchor="tour-options"><a href="#tour-options">Tour options</a></li>
-      <li data-menuanchor="feedback"><a href="#feedback">Feedback</a></li>
+      <li data-menuanchor="tour" class="menu__item"><a href="#tour">Kyiv tour</a></li>
+      <li data-menuanchor="reasons" class="menu__item"><a href="#reasons">Why go?</a></li>
+      <li data-menuanchor="guide" class="menu__item"><a href="#guide">The guide</a></li>
+      <li data-menuanchor="tour-options" class="menu__item"><a href="#tour-options">Tour options</a></li>
+      <li data-menuanchor="feedback" class="menu__item"><a href="#feedback">Feedback</a></li>
     </ul>
     <div id="fullpage">
-      <div data-anchor="tour" class="section tour bgimg inverted">
+      <div data-anchor="tour" class="section tour">
         <div class="container">
           <h1>Kyiv</h1>
-          <h2>Why go?</h2>
+          <p class="question">Why go?</p>
         </div><a href="#reasons" class="arrow-icon"></a>
       </div>
       <div data-anchor="reasons" class="section reasons">
@@ -66,13 +66,29 @@
         <div class="slide reason4">
           <div class="container">
             <h2>Reasonable prices</h2>
-            <p>Dinner bill&#160;&#8212; &#36;8<br>Ticket to&#160;museum&#160;&#8212; &#36;2<br>Subway ticket&#160;&#8212; &#36;0,2<br>Cup of&#160;coffee&#160;&#8212; &#36;1<br>Taxi around centre&#160;&#8212; &#36;3<br>Cocktail in&#160;bar&#160;&#8212; &#36;3</p>
+            <ul class="priceTable">
+              <li class="priceTable__item priceTable__itemDinner">Dinner bill <span class="priceAmount">&#36;8</span></li>
+              <li class="priceTable__item priceTable__itemMuseum">Ticket to&#160;museum <span class="priceAmount">&#36;2</span></li>
+              <li class="priceTable__item priceTable__itemSubway">Subway ticket <span class="priceAmount">&#36;0,2</span></li>
+              <li class="priceTable__item priceTable__itemCoffee">Cup of&#160;coffee <span class="priceAmount">&#36;1</span></li>
+              <li class="priceTable__item priceTable__itemTaxi">Taxi around centre <span class="priceAmount">&#36;3</span></li>
+              <li class="priceTable__item priceTable__itemCocktail">Cocktail in&#160;bar <span class="priceAmount">&#36;3</span></li>
+            </ul>
           </div>
         </div>
         <div class="slide reason5">
           <div class="container">
             <h2>Entertainment</h2>
-            <p>More than 150 museums<br>World heritage sites<br>Stunning parks and river beaches<br>Numerous night clubs<br>Cultural events and festivals<br>Various art spaces<br>Restaurants and street food spots<br>Traditional food markets</p>
+            <ul class="entertainmentList txtCenter">
+              <li class="entertainmentList__item">- More than 150 museums</li>
+              <li class="entertainmentList__item">- World heritage sites</li>
+              <li class="entertainmentList__item">- Stunning parks and river beaches</li>
+              <li class="entertainmentList__item">- Numerous night clubs</li>
+              <li class="entertainmentList__item">- Cultural events and festivals</li>
+              <li class="entertainmentList__item">- Various art spaces</li>
+              <li class="entertainmentList__item">- Restaurants and street food spots</li>
+              <li class="entertainmentList__item">- Traditional food markets</li>
+            </ul>
           </div>
         </div>
         <div class="slide reason6">
@@ -109,31 +125,55 @@
         </div>
       </div>
       <div data-anchor="tour-options" class="section tour-options">
-        <div class="slide tour-options__meetkyiv">
+        <div class="slide tourOptions__meetkyiv">
           <div class="container">
             <h2>Meet Kyiv tour</h2>
-            <p>is&#160;the best way to&#160;make friends with the city in&#160;the quickest way, to&#160;discover the basics of&#160;its history and see the most important sights.<br>3-4&#160;hours, 10&#160;km, by&#160;foot/ car, ...&#36;</p>
+            <p>is&#160;the best way to&#160;make friends with the city in&#160;the quickest way, to&#160;discover the basics of&#160;its history and see the most important sights.</p>
+            <ul class="tourDetails">
+              <li class="tourDetails__item tourDetails__itemHours txtCenter">3-4&#160;hrs</li>
+              <li class="tourDetails__item tourDetails__itemDistance txtCenter">10&#160;km</li>
+              <li class="tourDetails__item tourDetails__itemFoot txtCenter">by&#160;foot</li>
+              <li class="tourDetails__item tourDetails__itemCar txtCenter">by&#160;car</li>
+              <li class="tourDetails__item tourDetails__itemCost txtCenter">&#36;750</li>
+            </ul>
           </div>
         </div>
-        <div class="slide tour-options__explorekyiv">
+        <div class="slide tourOptions__explorekyiv">
           <div class="container">
-            <h2>Explore Kyiv (full-day) tour</h2>
-            <p>is&#160;perfect when quick glance is&#160;not enough and you want at&#160;an&#160;easy pace admire the beauty of&#160;central district, visit hidden places and hear exciting stories. Three or&#160;four stops are usually made.<br>10&#160;hours, 20&#160;km, by&#160;foot/ car, ...&#36;</p>
+            <h2>Explore Kyiv tour</h2>
+            <p class="tourOptions__nameBottomline txtCenter"><i>full-day</i></p>
+            <p>is&#160;perfect when quick glance is&#160;not enough and you want at&#160;an&#160;easy pace admire the beauty of&#160;central district, visit hidden places and hear exciting stories. Three or&#160;four stops are usually made.<br></p>
+            <ul class="tourDetails">
+              <li class="tourDetails__item tourDetails__itemHours txtCenter">10&#160;hrs</li>
+              <li class="tourDetails__item tourDetails__itemDistance txtCenter">20&#160;km</li>
+              <li class="tourDetails__item tourDetails__itemFoot txtCenter">by&#160;foot</li>
+              <li class="tourDetails__item tourDetails__itemCar txtCenter">by&#160;car</li>
+              <li class="tourDetails__item tourDetails__itemCost txtCenter">&#36;1500</li>
+            </ul>
           </div>
         </div>
-        <div class="slide tour-options__feelkyiv">
+        <div class="slide tourOptions__feelkyiv">
           <div class="container">
-            <h2>Feel Kyiv (2-day) tour</h2>
-            <p>is&#160;the possibility to&#160;see the city beyond touristic map, not only the centre but its suburbs, visit unique places and actual events, feel local life as&#160;it&#160;is.<br>20&#160;hours, 30&#160;km, by&#160;foot/ car, ...&#36;</p>
+            <h2>Feel Kyiv tour</h2>
+            <p class="tourOptions__nameBottomline txtCenter"><i>2 days</i></p>
+            <p>is&#160;the possibility to&#160;see the city beyond touristic map, not only the centre but its suburbs, visit unique places and actual events, feel local life as&#160;it&#160;is.<br></p>
+            <ul class="tourDetails">
+              <li class="tourDetails__item tourDetails__itemHours txtCenter">20&#160;hrs</li>
+              <li class="tourDetails__item tourDetails__itemDistance txtCenter">30&#160;km</li>
+              <li class="tourDetails__item tourDetails__itemFoot txtCenter">by&#160;foot</li>
+              <li class="tourDetails__item tourDetails__itemCar txtCenter">by&#160;car</li>
+              <li class="tourDetails__item tourDetails__itemCost txtCenter">&#36;2000</li>
+            </ul>
           </div>
         </div>
-        <div class="slide tour-options__tastekyiv">
+        <div class="slide tourOptions__tastekyiv">
           <div class="container">
-            <h2>Taste Kyiv (gastronomic) tour</h2>
+            <h2>Taste Kyiv tour</h2>
+            <p class="tourOptions__nameBottomline txtCenter"><i>gastronomic</i></p>
             <p>to&#160;explore the city centre including food markets and festivals, traditional cuisine, world&#146;s fast food, classy restaurants, best coffee spots and bars.<br>Duration and locations are discussed.</p>
           </div>
         </div>
-        <div class="slide tour-options__dreamkyiv">
+        <div class="slide tourOptions__dreamkyiv">
           <div class="container">
             <h2>Dream Kyiv tour</h2>
             <p>is&#160;arranged according to&#160;your personal requests. So&#160;if&#160;you want to&#160;see only all art galleries in&#160;the city or&#160;coffee shops, visit secret places and architecture of&#160;Soviet times&#160;&#8212; no&#160;problem. We&#160;can get pretty much anywhere you want to&#160;go&#160;in&#160;the city.<br>Duration and locations are discussed.</p>
@@ -141,24 +181,44 @@
         </div>
       </div>
       <div data-anchor="feedback" class="section feedback">
-        <div class="slide feedback__infopulse">
-          <div class="container">
-            <p>&#171;Anna often helps our company to&#160;welcome our foreign partners and clients to&#160;Kiev. She does a&#160;superb job showing our guests round the city and keeping everyone interested. It&#146;s a&#160;great pleasure to&#160;work with such a&#160;big professional and an&#160;easygoing person!&#187;<br>Christian Berner, Ukraine, &#171;Infopulse&#187;</p>
+        <div class="slide">
+          <div class="container txtCenter"><img src="images/clients-christian-berner.jpg" class="feedback__photo">
+            <p class="feedback__text">
+              <q>Anna often helps our company to&#160;welcome our foreign partners and clients to&#160;Kiev. She does a&#160;superb job showing our guests round the city and keeping everyone interested. It&#146;s a&#160;great pleasure to&#160;work with such a&#160;big professional and an&#160;easygoing person!</q>
+            </p>
+            <p class="feedback__name">Christian Berner, Ukraine, 
+              <q>Infopulse</q>
+            </p>
           </div>
         </div>
-        <div class="slide feedback__hasoffers">
-          <div class="container">
-            <p>&#171;Thanks Anna Lytkina for epic tour!&#187;<br>Lucas Brown, USA, &#171;HasOffers&#187;</p>
+        <div class="slide">
+          <div class="container txtCenter"><img src="images/clients-lucas-brown.jpg" class="feedback__photo">
+            <p class="feedback__text">
+              <q>Thanks Anna Lytkina for epic tour!</q>
+            </p>
+            <p class="feedback__name">Lucas Brown, USA, 
+              <q>HasOffers</q>
+            </p>
           </div>
         </div>
-        <div class="slide feedback__castrol">
-          <div class="container">
-            <p>&#171;Being introduced to&#160;Kiev with Anna was a&#160;heart-warming, fun and insightful experience. She really brought the history of&#160;this great city to&#160;life for&#160;us and showed&#160;us treasures and places that we&#160;would never have found on&#160;our own. It&#160;was a&#160;perfect day out. Thank you Anna!&#187;<br>&#171;Castrol&#187;, Turkey</p>
+        <div class="slide">
+          <div class="container txtCenter"><img src="images/clients-castrol.jpg" class="feedback__photo">
+            <p class="feedback__text">
+              <q>Being introduced to&#160;Kiev with Anna was a&#160;heart-warming, fun and insightful experience. She really brought the history of&#160;this great city to&#160;life for&#160;us and showed&#160;us treasures and places that we&#160;would never have found on&#160;our own. It&#160;was a&#160;perfect day out. Thank you Anna!</q>
+            </p>
+            <p class="feedback__name">
+              <q>Castrol</q>, Turkey
+            </p>
           </div>
         </div>
-        <div class="slide feedback__opet">
-          <div class="container">
-            <p>&#171;First of&#160;all&#160;I want to&#160;thank our tour guide Anna who introduced&#160;us the city. She provided&#160;us with a&#160;whole lot of&#160;exciting information. She is&#160;really experienced guide and&#160;I would like to&#160;recommend visiting Kiev under her guidance. Because it&#160;would be&#160;much more interesting!&#187;<br>Ramazan Centeli, Turkey, &#171;OPET&#187;</p>
+        <div class="slide">
+          <div class="container txtCenter"><img src="images/clients-ramazan-centeli.jpg" class="feedback__photo">
+            <p class="feedback__text">
+              <q>First of&#160;all&#160;I want to&#160;thank our tour guide Anna who introduced&#160;us the city. She provided&#160;us with a&#160;whole lot of&#160;exciting information. She is&#160;really experienced guide and&#160;I would like to&#160;recommend visiting Kiev under her guidance. Because it&#160;would be&#160;much more interesting!</q>
+            </p>
+            <p class="feedback__name">Ramazan Centeli, Turkey, 
+              <q>OPET</q>
+            </p>
           </div>
         </div>
       </div>

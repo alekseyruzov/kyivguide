@@ -126,7 +126,7 @@ html.fp-enabled,
     margin-left: 0 !important;
 }
 .fp-slidesNav.bottom {
-    bottom: 17px;
+    bottom: 0;
 }
 .fp-slidesNav.top {
     top: 17px;

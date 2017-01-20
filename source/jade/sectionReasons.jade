@@ -33,40 +33,34 @@
 				path(d='M54.5 29.7l-20.8 31h24v-36h-.2z')
 				path(d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm19.6 62.8h-9.8v13.3h6.3v2.1H51.4v-2.1h6.3V62.8H30.4v-1.2l26.9-39.9h2.5v38.9h9.8v2.2z')
 			h2 Reasonable prices
-			p
-				| Dinner bill&#160;&#8212; &#36;8
-				br
-				| Ticket to&#160;museum&#160;&#8212; &#36;2
-				br
-				| Subway ticket&#160;&#8212; &#36;0,2
-				br
-				| Cup of&#160;coffee&#160;&#8212; &#36;1
-				br
-				| Taxi around centre&#160;&#8212; &#36;3
-				br
-				| Cocktail in&#160;bar&#160;&#8212; &#36;3
+			ul.priceTable
+				li.priceTable__item.priceTable__itemDinner
+					| Dinner bill #[span.priceAmount &#36;8]
+				li.priceTable__item.priceTable__itemMuseum
+					| Ticket to&#160;museum #[span.priceAmount &#36;2]
+				li.priceTable__item.priceTable__itemSubway
+					| Subway ticket #[span.priceAmount &#36;0,2]
+				li.priceTable__item.priceTable__itemCoffee
+					| Cup of&#160;coffee #[span.priceAmount &#36;1]
+				li.priceTable__item.priceTable__itemTaxi
+					| Taxi around centre #[span.priceAmount &#36;3]
+				li.priceTable__item.priceTable__itemCocktail
+					| Cocktail in&#160;bar #[span.priceAmount &#36;3]
 
 	.slide.reason5
 		.container
 			//-svg#scrolldown-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100')
 				path(d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm12.1 73.5c-2.7 3.4-6.9 5.1-12.6 5.1-4.6 0-8.4-1.3-11.4-3.9-3-2.6-4.5-6.4-4.3-11.5l.1-.2h1.8c0 4.4 1.2 7.8 3.7 10.1s5.8 3.4 10.1 3.4c5 0 8.7-1.4 11-4.1 2.3-2.8 3.5-6.9 3.5-12.5 0-4.8-1.2-8.5-3.5-11.2-2.3-2.7-5.6-4.1-9.8-4.1-4.1 0-7.4.7-9.7 2.1-2.4 1.4-4.1 3.4-5.1 6.1l-1.6-.6 3-30.8h27.1v7.4h-2.1v-5.3H39.2l-2.4 23.9c1.6-1.6 3.4-2.9 5.3-3.7 1.9-.8 4.8-1.3 8.5-1.4 4.5-.1 8.2 1.4 11.1 4.6 2.9 3.2 4.4 7.5 4.4 12.9.1 5.8-1.3 10.3-4 13.7z')
 			h2 Entertainment
-			p
-				| More than 150 museums
-				br
-				| World heritage sites
-				br
-				| Stunning parks and river beaches
-				br
-				| Numerous night clubs
-				br
-				| Cultural events and festivals
-				br
-				| Various art spaces
-				br
-				| Restaurants and street food spots
-				br
-				| Traditional food markets
+			ul.entertainmentList.txtCenter
+				li.entertainmentList__item - More than 150 museums
+				li.entertainmentList__item - World heritage sites
+				li.entertainmentList__item - Stunning parks and river beaches
+				li.entertainmentList__item - Numerous night clubs
+				li.entertainmentList__item - Cultural events and festivals
+				li.entertainmentList__item - Various art spaces
+				li.entertainmentList__item - Restaurants and street food spots
+				li.entertainmentList__item - Traditional food markets
 
 	.slide.reason6
 		.container

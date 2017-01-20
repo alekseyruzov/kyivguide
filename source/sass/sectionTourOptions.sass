@@ -1,0 +1,27 @@
+
+/*----- Section "Tour options" -----*/
+.tourDetails
+	@include container(100%)
+	margin-top: 2em
+	&__item
+		@include span(1 of 5)
+		white-space: nowrap
+		background-repeat: no-repeat
+		background-position: 50% 0
+		background-size: 85%
+		padding-top: 55px
+
+.tourDetails__itemHours
+	background-image: url('../images/icon-clock.svg')
+.tourDetails__itemDistance
+	background-image: url('../images/icon-distance.svg')
+.tourDetails__itemFoot
+	background-image: url('../images/icon-footstep.svg')
+.tourDetails__itemCar
+	background-image: url('../images/icon-car.svg')
+.tourDetails__itemCost
+	background-image: url('../images/icon-wallet.svg')
+
+.tourOptions__nameBottomline
+	margin-top: -15px
+	font-size: ms(1)

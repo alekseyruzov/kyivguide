@@ -1,3 +1,5 @@
+
+/*--- sectionTypography ---*/
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100,300|Rubik:300,400,700&subset=cyrillic')
 @import '../../bower_components/modular-scale/stylesheets/modular-scale'
 $ms-base: 14px, 16px, 18px
@@ -10,20 +12,33 @@ body
     font-weight: 300
     color: $text-color
     hyphens: auto
-
+    text-align: justify
 h1
     font-family: 'Rubik', sans-serif
     font-size: ms(14)
     margin: 0
     line-height: 1.2
+    color: $text-color-inverted
 
-@include breakpoint($small)
-    h1
+    @include breakpoint($small)
         font-size: ms(16)
+    @include breakpoint($medium)
+        font-size: ms(18)
 h2
     font-family: 'Rubik', sans-serif
     font-size: ms(4)
     font-weight: 400
     line-height: 1.2
+    text-align: center
     margin-top: 0.5em
     hyphens: none
+
+ul
+    padding: 0
+    list-style-type: none
+q
+    quotes: '\00ab' '\00bb'
+
+.question
+    color: $text-color-inverted
+    font-size: ms(4)

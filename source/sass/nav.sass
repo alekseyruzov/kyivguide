@@ -1,16 +1,33 @@
-#menu
-	display: none
-	list-style-type: none
-	// position: fixed	
+
+/*----- Nav -----*/
+%navPosition
+	position: fixed
+	width: 100%
+	z-index: 1000
 	text-align: center
+	text-transform: uppercase
+	list-style-type: none
+
+.slicknav_menu
+	@extend %navPosition
+	@include breakpoint($medium)
+		display: none
+
+
+#menu
+	@extend %navPosition
+	top: 5em
+	display: none
 	padding: 0
 	margin: 0
-	background: rgba(0,0,0,.4)
+	@include breakpoint($medium)
+		display: block
 
-	li
-		//margin: 0 5px
-		//border-radius: 5px
-		//background: rgba(255,255,255,.5)
+	.menu__item
+		display: inline-block
+		margin: 0 5px
+		border-radius: 5px
+		background: rgba(255,255,255,.5)
 
 		a
 			display: block
@@ -22,7 +39,7 @@
 		&.active
 			background: rgba(0,0,0,.15)
 			a
-				color: $color-inverted
+				color: $text-color-inverted
 
 #menu-icon
 	position: fixed
@@ -31,11 +48,8 @@
 	text-decoration: none
 	font-size: 3rem
 
-nav
-	position: fixed
-	top: 0
-	width: 100%
-	z-index: 999
-	&:hover
-		#menu
-			display: block
+// nav
+// 	@extend %navPosition
+// 	&:hover
+// 		#menu
+// 			display: block

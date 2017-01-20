@@ -8,12 +8,7 @@ $color_hover_bg: #ffffff1a;
 $color_hover_text: #69909C;
 
 .slicknav_menu {
-	position: absolute;
-	width: 100%;
-	z-index: 1000;
 	background: $color_bg;
-	text-align: center;
-	text-transform: uppercase;
 	* {
 		box-sizing: border-box;
 	}
