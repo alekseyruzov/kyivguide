@@ -9,8 +9,7 @@
 	background: tomato
 	z-index: 1100
 	padding-top: 7em
-	color: #fff
-	fill: #fff
+	@extend %colorInverted
 	display: none
 	@include breakpoint($small-land)
 		display: block
@@ -18,7 +17,7 @@
 		text-align: center
 
 //Background fix
-.slide, .tour
+%bgFix
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center
@@ -29,17 +28,25 @@
 	position: relative
 	top: 4em
 	@include breakpoint($medium)
-		top: 10em
+		top: 7em
 
 //Centering text
-.txtCenter
+@mixin txtCenter
 	text-align: center
-	
+
+%txtCenter
+	@include txtCenter
+
+//Color inversion
+%colorInverted
+	color: $text-color-inverted
+	fill: $text-color-inverted
+
 //Animated arrow icon
 .arrow-icon
 	position: absolute
 	left: calc(50% - (50px / 2))
-	bottom: 3em
+	bottom: 2em
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=) 50% no-repeat
 	background-size: 60%
 	border-radius: 50%
@@ -73,8 +80,3 @@
 	100%
 		transform: scale(2)
 		opacity: 0
-
-// Base
-// path, polygon
-// 	fill: #222
-/*----- End of Utility -----*/

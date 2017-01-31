@@ -1,27 +1,50 @@
 
 /*----- Section "Tour options" -----*/
-.tourDetails
-	@include container(100%)
-	margin-top: 2em
-	&__item
-		@include span(1 of 5)
-		white-space: nowrap
-		background-repeat: no-repeat
-		background-position: 50% 0
-		background-size: 85%
-		padding-top: 55px
-
-.tourDetails__itemHours
-	background-image: url('../images/icon-clock.svg')
-.tourDetails__itemDistance
-	background-image: url('../images/icon-distance.svg')
-.tourDetails__itemFoot
-	background-image: url('../images/icon-footstep.svg')
-.tourDetails__itemCar
-	background-image: url('../images/icon-car.svg')
-.tourDetails__itemCost
-	background-image: url('../images/icon-wallet.svg')
 
 .tourOptions__nameBottomline
 	margin-top: -15px
 	font-size: ms(1)
+	@extend %txtCenter
+.tourDetails
+	margin-top: 2em
+	&__item
+		@include span(1 of 5)
+		text-align: center
+	@include breakpoint($medium)
+		@include container(70%)
+
+
+//Meet Kiev tour
+.tourOptions__meetkyiv
+	background: #bc1339
+	@extend %colorInverted
+	@include breakpoint($medium)
+		@include txtCenter
+
+//Explore Kiev tour
+.tourOptions__explorekyiv
+	background: purple
+	@extend %colorInverted
+	@include breakpoint($medium)
+		@include txtCenter
+
+//Feel Kiev tour
+.tourOptions__feelkyiv
+	background: teal
+	@extend %colorInverted
+	@include breakpoint($medium)
+		@include txtCenter
+
+//Taste Kiev tour
+.tourOptions__tastekyiv
+	background: #663
+	@extend %colorInverted
+	@include breakpoint($medium)
+		@include txtCenter
+
+//Dream Kiev tour
+.tourOptions__dreamkyiv
+	background: #0048b1
+	@extend %colorInverted
+	@include breakpoint($medium)
+		@include txtCenter

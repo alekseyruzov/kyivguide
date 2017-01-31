@@ -1,23 +1,25 @@
 
-/*----- Section "Reasons" -----*/
-@include breakpoint($medium)
-	.reason1
+/*----- Section "Reasons" -----*/	
+
+.slide
+	@extend %bgFix
+	background-color: #069
+
+//slide "Rich history and culture"
+.reasonHystory
+	@include breakpoint($medium)
 		background-image: url('../images/section2-reason1-lg-background.jpg')
-	.reason2
+
+
+//slide "Unique atmosphere"
+.reasonAtmosphere
+	@include breakpoint($medium)
 		background-image: url('../images/section2-reason2-lg-background.jpg')
-	.reason3
+
+//slide "Beautiful views"
+.reasonViews
+	@include breakpoint($medium)
 		background-image: url('../images/section2-reason3-lg-background.jpg')
-	.reason4
-		background-image: url('../images/section2-reason4-lg-background.jpg')
-	.reason5
-		background-image: url('../images/section2-reason5-lg-background.jpg')	
-	.reason6
-		background-image: url('../images/section2-reason6-lg-background.png')
-		background-size: 70%
-	.reason7
-		background-image: url('../images/section2-reason7-lg-background.jpg')
-	.guide
-		background-image: url('../images/section3-lg-background.jpg')
 
 //slide "Reasonable prices"
 .priceTable__item
@@ -27,6 +29,8 @@
 	font-size: ms(1)
 	line-height: 25px
 	text-transform: uppercase
+	&:last-child
+		margin-bottom: 0
 .priceAmount
 	float: right
 	color: #0bb8d7
@@ -44,8 +48,44 @@
 .priceTable__itemCocktail
 	background-image: url('../images/icon-cocktail.svg')
 
-//slide "Entertaiment"
+@include breakpoint($medium)
+	.reasonPrices
+		background-image: url('../images/section2-reason4-lg-background.jpg')
+	.priceTable
+		@include container(50%)
+		background: $background-layer
+		border-radius: 8px
+		padding: 1em
+	.priceTable__item
+		margin-bottom: 15px
+		color: $text-color
+
+//slide "Entertainment"
+.reasonEntertainment
+	@extend %txtCenter
+	@include breakpoint($medium)
+		background-image: url('../images/section2-reason5-lg-background.jpg')	
 .entertainmentList__item
 	margin-bottom: 5px
-	line-height: 18px
-	text-transform: uppercase
+
+//slide "Good location"
+#iconLocation
+	display: block
+	margin: 0 auto
+
+@include breakpoint($medium)
+	.blockIcon	
+		@include span(3 of 8)
+	.blockText
+		@include span(5 of 8)
+	#iconLocation
+		width: 180px
+		float: left
+		margin-right: 40px
+		margin-top: -20px
+
+
+//slide "Nice people"
+@include breakpoint($medium)
+	.reasonPeople
+		background-image: url('../images/section2-reason7-lg-background.jpg')

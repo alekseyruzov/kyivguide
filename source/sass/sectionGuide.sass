@@ -1,6 +1,11 @@
 
 /*----- Section "Guide" -----*/
+.guide
+	background-image: url('../images/section3-lg-background.jpg')
+	@extend %bgFix
 .contactIcons
 	@include container(100%)
+	@include breakpoint($medium)
+		@include container(60%)
 	&__icon
 		@include span(1 of 6)

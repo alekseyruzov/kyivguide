@@ -1,30 +1,32 @@
-@charset "UTF-8";
-/*--- sectionTypography --- */
+/*--- sectionTypography ---*/
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100,300|Rubik:300,400,700&subset=cyrillic");
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 300;
-  color: #fff;
-  fill: #fff;
+  color: #222;
   -webkit-hyphens: auto;
+     -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
   text-align: justify;
 }
+
 @media (min-width: 48em) {
   body {
+    color: #fff;
     font-size: 23px;
   }
 }
 
 .headings, h1, h2 {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.2;
   text-align: center;
   font-weight: 700;
   -webkit-hyphens: none;
+     -moz-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
 }
@@ -38,6 +40,7 @@ h1 {
   margin: 0;
   color: #fff;
 }
+
 @media (min-width: 48em) {
   h1 {
     font-size: 200px;
@@ -49,6 +52,7 @@ h2 {
   font-size: 26px;
   margin-top: 0.5em;
 }
+
 @media (min-width: 48em) {
   h2 {
     font-size: 47px;
@@ -61,7 +65,7 @@ ul {
 }
 
 q {
-  quotes: "«" "»";
+  quotes: '\00ab' '\00bb';
 }
 
 .question {
@@ -69,7 +73,7 @@ q {
   font-size: 26px;
 }
 
-/*----- Utility ----- */
+/*----- Utility -----*/
 .deviceRotate {
   position: absolute;
   height: 100%;
@@ -79,16 +83,18 @@ q {
   padding-top: 7em;
   display: none;
 }
+
 @media screen and (max-height: 30em) and (orientation: landscape) {
   .deviceRotate {
     display: block;
   }
 }
+
 .deviceRotate__icon, .deviceRotate__text {
   text-align: center;
 }
 
-.tour, .slide, .guide {
+.tour, .guide {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -101,22 +107,24 @@ q {
   position: relative;
   top: 4em;
 }
+
 .container:after {
   content: " ";
   display: block;
   clear: both;
 }
+
 @media (min-width: 48em) {
   .container {
     top: 7em;
   }
 }
 
-.reasonEntertainment, .tourOptions__nameBottomline {
+.txtCenter {
   text-align: center;
 }
 
-.deviceRotate, .tourOptions__meetkyiv, .tourOptions__explorekyiv, .tourOptions__feelkyiv, .tourOptions__tastekyiv, .tourOptions__dreamkyiv {
+.deviceRotate, .reasonLocation, .tourOptions__meetkyiv {
   color: #fff;
   fill: #fff;
 }
@@ -131,15 +139,17 @@ q {
   height: 50px;
   width: 50px;
   border: 1px solid white;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
+
 .arrow-icon:hover {
   -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
+
 .arrow-icon:after, .arrow-icon:before {
-  content: "";
+  content: '';
   position: absolute;
   top: -1px;
   left: -1px;
@@ -148,11 +158,13 @@ q {
   width: 100%;
   height: 100%;
 }
+
 .arrow-icon:after {
   -webkit-animation: sonar 5s infinite 3s;
           animation: sonar 5s infinite 3s;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
+
 .arrow-icon:before {
   -webkit-animation: sonar 5s infinite 1.5s;
           animation: sonar 5s infinite 1.5s;
@@ -184,7 +196,8 @@ q {
     opacity: 0;
   }
 }
-/*----- Nav ----- */
+
+/*----- Nav -----*/
 .slicknav_menu, #menu {
   position: fixed;
   width: 100%;
@@ -206,23 +219,27 @@ q {
   padding: 0;
   margin: 0;
 }
+
 @media (min-width: 48em) {
   #menu {
     display: block;
     top: 4em;
   }
 }
+
 #menu .menu__item {
   display: inline-block;
   margin: 0 5px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.5);
 }
+
 @media (min-width: 48em) {
   #menu .menu__item {
     font-size: 18px;
   }
 }
+
 #menu .menu__item a {
   display: block;
   padding: 5px 15px;
@@ -230,9 +247,11 @@ q {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 #menu .menu__item.active {
   background: rgba(0, 0, 0, 0.15);
 }
+
 #menu .menu__item.active a {
   color: #fff;
 }
@@ -245,17 +264,13 @@ q {
   font-size: 3rem;
 }
 
-/*----- Section "Tour" ----- */
+/*----- Section "Tour" -----*/
 .tour {
   background-image: url("../images/section1-lg-background.jpg");
   text-align: center;
 }
 
-/*----- Section "Reasons" ----- */
-.slide {
-  background-color: #069;
-}
-
+/*----- Section "Reasons" -----*/
 @media (min-width: 48em) {
   .reasonHystory {
     background-image: url("../images/section2-reason1-lg-background.jpg");
@@ -263,14 +278,30 @@ q {
 }
 
 @media (min-width: 48em) {
-  .reasonAtmosphere {
-    background-image: url("../images/section2-reason2-lg-background.jpg");
-  }
+  background-image: url("../images/section2-reason2-lg-background.jpg");
 }
 
 @media (min-width: 48em) {
-  .reasonViews {
-    background-image: url("../images/section2-reason3-lg-background.jpg");
+  background-image: url("../images/section2-reason3-lg-background.jpg");
+}
+
+@media (min-width: 48em) {
+  background-image: url("../images/section2-reason4-lg-background.jpg");
+}
+
+@media (min-width: 48em) {
+  .priceTable {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 1em;
+  }
+  .priceTable:after {
+    content: " ";
+    display: block;
+    clear: both;
   }
 }
 
@@ -282,6 +313,14 @@ q {
   line-height: 25px;
   text-transform: uppercase;
 }
+
+@media (min-width: 48em) {
+  .priceTable__item {
+    margin-bottom: 15px;
+    color: #222;
+  }
+}
+
 .priceTable__item:last-child {
   margin-bottom: 0;
 }
@@ -317,42 +356,15 @@ q {
 }
 
 @media (min-width: 48em) {
-  .reasonPrices {
-    background-image: url("../images/section2-reason4-lg-background.jpg");
-  }
-
-  .priceTable {
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    padding: 1em;
-  }
-  .priceTable:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-
-  .priceTable__item {
-    margin-bottom: 15px;
-    color: #222;
-  }
-}
-@media (min-width: 48em) {
-  .reasonEntertainment {
-    background-image: url("../images/section2-reason5-lg-background.jpg");
-  }
+  background-image: url("../images/section2-reason5-lg-background.jpg");
 }
 
 .entertainmentList__item {
   margin-bottom: 5px;
 }
 
-#iconLocation {
-  display: block;
-  margin: 0 auto;
+.reasonLocation {
+  background-color: #0bb8d7;
 }
 
 @media (min-width: 48em) {
@@ -363,7 +375,9 @@ q {
     padding-left: 1.25%;
     padding-right: 1.25%;
   }
+}
 
+@media (min-width: 48em) {
   .blockText {
     box-sizing: border-box;
     width: 62.5%;
@@ -371,7 +385,14 @@ q {
     padding-left: 1.25%;
     padding-right: 1.25%;
   }
+}
 
+#iconLocation {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 48em) {
   #iconLocation {
     width: 180px;
     float: left;
@@ -379,12 +400,12 @@ q {
     margin-top: -20px;
   }
 }
+
 @media (min-width: 48em) {
-  .reasonPeople {
-    background-image: url("../images/section2-reason7-lg-background.jpg");
-  }
+  background-image: url("../images/section2-reason7-lg-background.jpg");
 }
-/*----- Section "Guide" ----- */
+
+/*----- Section "Guide" -----*/
 .guide {
   background-image: url("../images/section3-lg-background.jpg");
 }
@@ -394,11 +415,13 @@ q {
   margin-left: auto;
   margin-right: auto;
 }
+
 .contactIcons:after {
   content: " ";
   display: block;
   clear: both;
 }
+
 @media (min-width: 48em) {
   .contactIcons {
     max-width: 60%;
@@ -411,90 +434,47 @@ q {
     clear: both;
   }
 }
+
 .contactIcons__icon {
   box-sizing: border-box;
-  width: 16.6666666667%;
+  width: 16.66667%;
   float: left;
-  padding-left: 1.6666666667%;
-  padding-right: 1.6666666667%;
+  padding-left: 1.66667%;
+  padding-right: 1.66667%;
 }
 
-/*----- Section "Tour options" ----- */
-.tourOptions__nameBottomline {
-  margin-top: -15px;
-  font-size: 16px;
+/*----- Section "Tour options" -----*/
+.tourOptions__meetkyiv {
+  background: #bc1339;
 }
 
 .tourDetails {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2em;
 }
+
+.tourDetails:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 .tourDetails__item {
   box-sizing: border-box;
   width: 20%;
   float: left;
   padding-left: 2%;
   padding-right: 2%;
-  text-align: center;
-}
-@media (min-width: 48em) {
-  .tourDetails {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .tourDetails:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
 }
 
-.tourOptions__meetkyiv {
-  background: #bc1339;
-}
-@media (min-width: 48em) {
-  .tourOptions__meetkyiv {
-    text-align: center;
-  }
+.tourOptions__nameBottomline {
+  margin-top: -15px;
+  font-size: 16px;
 }
 
-.tourOptions__explorekyiv {
-  background: purple;
-}
-@media (min-width: 48em) {
-  .tourOptions__explorekyiv {
-    text-align: center;
-  }
-}
-
-.tourOptions__feelkyiv {
-  background: teal;
-}
-@media (min-width: 48em) {
-  .tourOptions__feelkyiv {
-    text-align: center;
-  }
-}
-
-.tourOptions__tastekyiv {
-  background: #663;
-}
-@media (min-width: 48em) {
-  .tourOptions__tastekyiv {
-    text-align: center;
-  }
-}
-
-.tourOptions__dreamkyiv {
-  background: #0048b1;
-}
-@media (min-width: 48em) {
-  .tourOptions__dreamkyiv {
-    text-align: center;
-  }
-}
-
-/*----- Section "Feedback" ----- */
+/*----- Section "Feedback" -----*/
 .feedback__photo {
   border-radius: 50%;
   width: 6em;

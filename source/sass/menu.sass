@@ -22,12 +22,15 @@
 	margin: 0
 	@include breakpoint($medium)
 		display: block
+		top: 4em
 
 	.menu__item
 		display: inline-block
 		margin: 0 5px
 		border-radius: 5px
 		background: rgba(255,255,255,.5)
+		@include breakpoint($medium)
+			font-size: ms(2)
 
 		a
 			display: block

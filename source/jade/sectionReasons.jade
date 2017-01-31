@@ -1,6 +1,5 @@
 .section.reasons(data-anchor='reasons')
-	//-p.reasons-headline Reasons to visit Ukraine’s capital:
-	.slide.reason1
+	.slide.reasonHystory
 		.container
 			//- svg#scrolldown-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='50')
 			//- 	path(d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm13.3 78.4H38.5v-2.1h11.3V23.9l-13.1 2.9v-1.9l15.2-3.3v54.6h11.3v2.2z')
@@ -10,7 +9,7 @@
 				br
 				| So&#160;just imagine how many great stories the city keeps.
 
-	.slide.reason2
+	.slide.reasonAtmosphere
 		.container
 			//-svg#scrolldown-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100')
 				path(d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm17.5 78.6H33.7v-2.1l18.5-21.3c3.5-4.1 6.1-7.6 7.7-10.5 1.6-2.9 2.4-5.7 2.4-8.2 0-4.1-1.1-7.3-3.4-9.6s-5.6-3.4-10-3.4c-4.6 0-8.2 1.4-10.7 4.1-2.5 2.7-3.8 6.2-3.8 10.5h-1.8l-.1-.2c-.1-4.6 1.3-8.5 4.3-11.7 3-3.2 7-4.8 12.1-4.8 4.7 0 8.4 1.3 11.3 4 2.8 2.6 4.2 6.4 4.2 11.2 0 3.1-1 6.3-3 9.6s-4.9 7-8.6 11.3L36.7 76.3l.1.2h28.6v-9.3h2.1v11.4z')
@@ -20,14 +19,14 @@
 				br
 				| Kyiv is&#160;rebellious and conservative, luxurious and shabby at&#160;the same time.
 
-	.slide.reason3
+	.slide.reasonViews
 		.container
 			//-svg#scrolldown-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100')
 				path(d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm12.7 74.8c-3.1 2.8-7.2 4.2-12.1 4.2-4.8 0-9-1.4-12.7-4.2-3.7-2.8-5.4-6.8-5.3-12l.1-.2h1.8c0 4.2 1.5 7.6 4.6 10.3C42.2 75.6 46 77 50.6 77s8.3-1.2 10.8-3.6c2.6-2.4 3.9-5.7 3.9-9.9 0-4.4-1.5-7.6-4.4-9.7-3-2.1-7-3.2-12-3.2h-4.3v-2.2h4.3c4.7 0 8.4-1.2 11.2-3.5 2.7-2.3 4.1-5.2 4.1-8.7 0-3.8-1.2-6.9-3.5-9.4s-5.8-3.7-10.3-3.7c-4.2 0-7.7 1.2-10.4 3.7-2.8 2.5-4.1 5.7-4.1 9.8h-1.8l-.1-.2c-.1-4.6 1.4-8.3 4.6-11.1 3.2-2.8 7.1-4.2 11.8-4.2 4.9 0 8.7 1.4 11.6 4.1 2.9 2.7 4.3 6.5 4.3 11.2 0 3-.9 5.6-2.8 8-1.9 2.3-4.4 4-7.6 5.1 3.7.9 6.5 2.5 8.6 4.9 2 2.4 3.1 5.4 3.1 9-.2 4.8-1.8 8.6-4.9 11.4z')
 			h2 Beautiful views
 			p 1/2 of&#160;Kyiv&#146;s territory is&#160;occupied by&#160;parks and gardens. You can&#146;t walk far without passing one. Picturesque Dnipro river, which runs through the middle of&#160;the city, provides sandy beaches and recreation areas in&#160;the very heart of&#160;the capital.
 
-	.slide.reason4
+	.slide.reasonPrices
 		.container
 			//-svg#scrolldown-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100')
 				path(d='M54.5 29.7l-20.8 31h24v-36h-.2z')
@@ -47,33 +46,48 @@
 				li.priceTable__item.priceTable__itemCocktail
 					| Cocktail in&#160;bar #[span.priceAmount &#36;3]
 
-	.slide.reason5
+	.slide.reasonEntertainment
 		.container
 			//-svg#scrolldown-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100')
 				path(d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm12.1 73.5c-2.7 3.4-6.9 5.1-12.6 5.1-4.6 0-8.4-1.3-11.4-3.9-3-2.6-4.5-6.4-4.3-11.5l.1-.2h1.8c0 4.4 1.2 7.8 3.7 10.1s5.8 3.4 10.1 3.4c5 0 8.7-1.4 11-4.1 2.3-2.8 3.5-6.9 3.5-12.5 0-4.8-1.2-8.5-3.5-11.2-2.3-2.7-5.6-4.1-9.8-4.1-4.1 0-7.4.7-9.7 2.1-2.4 1.4-4.1 3.4-5.1 6.1l-1.6-.6 3-30.8h27.1v7.4h-2.1v-5.3H39.2l-2.4 23.9c1.6-1.6 3.4-2.9 5.3-3.7 1.9-.8 4.8-1.3 8.5-1.4 4.5-.1 8.2 1.4 11.1 4.6 2.9 3.2 4.4 7.5 4.4 12.9.1 5.8-1.3 10.3-4 13.7z')
 			h2 Entertainment
 			ul.entertainmentList.txtCenter
-				li.entertainmentList__item - More than 150 museums
-				li.entertainmentList__item - World heritage sites
-				li.entertainmentList__item - Stunning parks and river beaches
-				li.entertainmentList__item - Numerous night clubs
-				li.entertainmentList__item - Cultural events and festivals
-				li.entertainmentList__item - Various art spaces
-				li.entertainmentList__item - Restaurants and street food spots
-				li.entertainmentList__item - Traditional food markets
+				li.entertainmentList__item - more than 150 museums
+				li.entertainmentList__item - world heritage sites
+				li.entertainmentList__item - stunning parks and river beaches
+				li.entertainmentList__item - numerous night clubs
+				li.entertainmentList__item - cultural events and festivals
+				li.entertainmentList__item - various art spaces
+				li.entertainmentList__item - restaurants and street food spots
+				li.entertainmentList__item - traditional food markets
 
-	.slide.reason6
+	.slide.reasonLocation
 		.container
-			//-svg#scrolldown-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100')
-				path(d='M50.2 43.2c-4 0-7.4 1.3-10.4 4-3 2.6-4.4 5.8-4.4 9.5v.1c0 6.4 1.3 11.4 4 14.9S45.6 77 50.1 77c4.3 0 7.8-1.6 10.5-4.9 2.7-3.3 4.1-7.2 4.1-11.7 0-5.2-1.2-9.4-3.7-12.5-2.5-3.1-6.1-4.7-10.8-4.7z')
-				path(d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm12 73.7c-3.1 3.5-7.1 5.3-12 5.3-5 0-9-1.9-12.1-5.8-3.1-3.9-4.7-9.3-4.7-16.4V44.1c0-7.5 1.7-13.3 5-17.2C41.5 23 45.7 21 50.8 21c2 0 3.9.2 5.8.6 1.9.4 3.6 1.1 5.3 2.1l-.8 2c-1.7-1-3.3-1.7-4.7-2-1.5-.4-3.3-.6-5.5-.6-4.5 0-8.2 1.7-11.1 5.2-2.9 3.5-4.3 8.7-4.3 15.8v6.8c1.2-2.8 3.2-5.1 5.8-7 2.7-1.8 5.8-2.7 9.3-2.7 5.1 0 9.1 1.8 12 5.3 2.9 3.5 4.3 8.2 4.3 14-.1 5.2-1.7 9.7-4.9 13.2z')
 			h2 Good location
+			svg#iconLocation(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 77 72', width='77')
+				path(d='M38.5,39.3c3.7,0,6.7-3,6.7-6.7s-3-6.7-6.7-6.7s-6.7,3-6.7,6.7S34.8,39.3,38.5,39.3z M38.5,27.9c2.6,0,4.7,2.1,4.7,4.7\
+				c0,2.6-2.1,4.7-4.7,4.7c-2.6,0-4.7-2.1-4.7-4.7C33.8,30,35.9,27.9,38.5,27.9z')
+				path(d='M76.6,0.2c-0.3-0.2-0.6-0.2-0.9-0.1L51,9.9L26.4,0.1c0,0,0,0,0,0c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0\
+				c0,0-0.1,0-0.1,0c-0.1,0-0.1,0-0.2,0c0,0-0.1,0-0.1,0c0,0,0,0,0,0l-25,10C0.2,10.2,0,10.6,0,11v60c0,0.3,0.2,0.6,0.4,0.8\
+				C0.6,71.9,0.8,72,1,72c0.1,0,0.3,0,0.4-0.1L26,62.1l24.6,9.9c0,0,0,0,0,0c0.1,0,0.2,0.1,0.3,0.1s0.2,0,0.3-0.1c0,0,0,0,0,0l25-10\
+				c0.4-0.2,0.6-0.5,0.6-0.9V1C77,0.7,76.8,0.4,76.6,0.2z M38.5,17c4,0,8,1.5,11,4.6c0.1,0.1,0.1,0.1,0.1,0.2c0.2,0.2,0.3,0.4,0.5,0.6\
+				l0.1,0.1c0,0,0,0,0,0c0,0,0,0,0,0c5.1,5.8,5.1,14.6,0,20.4c0,0,0,0,0,0c0,0,0,0,0,0l-0.1,0.1c-0.2,0.2-0.4,0.5-0.7,0.7l-11,11\
+				l-11-11c-0.2-0.2-0.4-0.4-0.6-0.7l-0.1-0.1c0,0,0,0,0,0c-5-5.8-5-14.6,0-20.4c0,0,0,0,0,0l0.1-0.1c0.2-0.2,0.4-0.5,0.7-0.7\
+				C30.5,18.5,34.5,17,38.5,17z M27,2.5l23,9.2v7.6c-0.1-0.1-0.2-0.1-0.2-0.2c-0.2-0.2-0.4-0.3-0.6-0.4c-0.3-0.2-0.5-0.4-0.8-0.6\
+				c-0.2-0.1-0.4-0.3-0.6-0.4c-0.3-0.2-0.6-0.3-0.8-0.5c-0.2-0.1-0.4-0.2-0.6-0.3c-0.3-0.1-0.6-0.3-0.9-0.4c-0.2-0.1-0.4-0.2-0.6-0.3\
+				c-0.3-0.1-0.6-0.2-0.9-0.3c-0.2-0.1-0.4-0.1-0.6-0.2c-0.3-0.1-0.7-0.2-1-0.2c-0.2,0-0.4-0.1-0.6-0.1c-0.4-0.1-0.7-0.1-1.1-0.2\
+				c-0.2,0-0.3-0.1-0.5-0.1C39.6,15,39,15,38.5,15c-0.5,0-1.1,0-1.6,0.1c-0.2,0-0.3,0-0.5,0.1c-0.4,0-0.7,0.1-1.1,0.2\
+				c-0.2,0-0.4,0.1-0.6,0.1c-0.3,0.1-0.6,0.1-1,0.2c-0.2,0.1-0.4,0.1-0.7,0.2c-0.3,0.1-0.6,0.2-0.9,0.3c-0.2,0.1-0.4,0.2-0.7,0.3\
+				c-0.3,0.1-0.6,0.3-0.9,0.4c-0.2,0.1-0.4,0.2-0.6,0.3c-0.3,0.2-0.5,0.3-0.8,0.5c-0.2,0.1-0.4,0.3-0.6,0.4c-0.3,0.2-0.5,0.4-0.8,0.6\
+				c-0.2,0.1-0.4,0.3-0.6,0.4c-0.1,0.1-0.2,0.1-0.2,0.2V2.5z M2,69.5V11.7l23-9.2v18.9c-2.6,3.2-4.1,7.1-4.1,11.2\
+				c0,4.2,1.4,8.1,4.1,11.2v16.5L2,69.5z M27,45.9l10.8,10.8c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3L50,45.9v23.6l-23-9.2V45.9z\
+				M75,60.3l-23,9.2V43.8c2.6-3.1,4.1-7.1,4.1-11.2s-1.4-8.1-4.1-11.2v-9.7l23-9.2V60.3z')
 			p 
 				| Kyiv is&#160;the very heart of&#160;Europe.
 				br
 				| The flight duration from Rome or&#160;Tel Aviv is&#160;about 3&#160;hours. So&#160;for some of&#160;you it&#160;can be&#160;the weekend trip.
 
-	.slide.reason7
+	.slide.reasonPeople
 		.container
 			//-svg#scrolldown-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100')
 				path(d='M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm18 23.9C62.5 30.4 57.7 37.7 53.9 46c-3.9 8.3-6.4 17.8-7.6 28.7l-.3 3.5h-2l.2-3.5c1.1-10.2 3.5-19.5 7.1-27.8 3.6-8.4 8.4-16 14.2-22.9H34.1v9.3H32V21.8h36v2.1z')
