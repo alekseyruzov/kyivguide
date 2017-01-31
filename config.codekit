@@ -3663,6 +3663,83 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/source\/jade\/icons\/iconCar.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconCar.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconCar.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconClock.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconClock.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconClock.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconDeviceRotate.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconDeviceRotate.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconDeviceRotate.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconDistance.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconDistance.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconDistance.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconLocation.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconLocation.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconLocation.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconPrice.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconPrice.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconPrice.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconWalk.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconWalk.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconWalk.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/source\/jade\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
