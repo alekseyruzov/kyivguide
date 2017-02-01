@@ -88,7 +88,7 @@ q {
   text-align: center;
 }
 
-.tour, .slide, .guide {
+* {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -112,7 +112,7 @@ q {
   }
 }
 
-.reasonEntertainment, .tourOptions__nameBottomline {
+.reasonEntertainment, .reasonLocation, .tourOptions__nameBottomline {
   text-align: center;
 }
 
@@ -252,68 +252,66 @@ q {
 }
 
 /*----- Section "Reasons" ----- */
-.slide {
+.reasonHystory {
   background-color: #069;
 }
-
 @media (min-width: 48em) {
   .reasonHystory {
     background-image: url("../images/section2-reason1-lg-background.jpg");
   }
 }
 
+.reasonAtmosphere {
+  background-color: #069;
+}
 @media (min-width: 48em) {
   .reasonAtmosphere {
     background-image: url("../images/section2-reason2-lg-background.jpg");
   }
 }
 
+.reasonViews {
+  background-color: #069;
+}
 @media (min-width: 48em) {
   .reasonViews {
     background-image: url("../images/section2-reason3-lg-background.jpg");
   }
 }
 
+.reasonPrices {
+  background-color: #069;
+}
+
 .priceTable__item {
-  background-repeat: no-repeat;
-  padding-left: 50px;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 30px;
+  height: 30px;
   text-transform: uppercase;
 }
 .priceTable__item:last-child {
   margin-bottom: 0;
 }
+.priceTable__itemIcon {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+.priceTable svg {
+  max-height: 90%;
+  max-width: 90%;
+}
 
 .priceAmount {
   float: right;
-  color: #0bb8d7;
-  font-size: 18px;
-}
-
-.priceTable__itemDinner {
-  background-image: url("../images/icon-bill.svg");
-}
-
-.priceTable__itemMuseum {
-  background-image: url("../images/icon-museum.svg");
-}
-
-.priceTable__itemSubway {
-  background-image: url("../images/icon-subway.svg");
-}
-
-.priceTable__itemCoffee {
-  background-image: url("../images/icon-coffee.svg");
-}
-
-.priceTable__itemTaxi {
-  background-image: url("../images/icon-taxi.svg");
-}
-
-.priceTable__itemCocktail {
-  background-image: url("../images/icon-cocktail.svg");
+  background: #fff;
+  color: #222;
+  border-radius: 6px;
+  width: 40px;
+  text-align: center;
 }
 
 @media (min-width: 48em) {
@@ -340,6 +338,9 @@ q {
     color: #222;
   }
 }
+.reasonEntertainment {
+  background-color: #069;
+}
 @media (min-width: 48em) {
   .reasonEntertainment {
     background-image: url("../images/section2-reason5-lg-background.jpg");
@@ -348,6 +349,10 @@ q {
 
 .entertainmentList__item {
   margin-bottom: 5px;
+}
+
+.reasonLocation {
+  background-color: #069;
 }
 
 #iconLocation {
@@ -379,11 +384,15 @@ q {
     margin-top: -20px;
   }
 }
+.reasonPeople {
+  background-color: #069;
+}
 @media (min-width: 48em) {
   .reasonPeople {
     background-image: url("../images/section2-reason7-lg-background.jpg");
   }
 }
+
 /*----- Section "Guide" ----- */
 .guide {
   background-image: url("../images/section3-lg-background.jpg");

@@ -1,52 +1,54 @@
 
-/*----- Section "Reasons" -----*/	
-
-.slide
-	@extend %bgFix
-	background-color: #069
+/*----- Section "Reasons" -----*/		
 
 //slide "Rich history and culture"
 .reasonHystory
+	background-color: $background-main
 	@include breakpoint($medium)
 		background-image: url('../images/section2-reason1-lg-background.jpg')
 
 
 //slide "Unique atmosphere"
 .reasonAtmosphere
+	background-color: $background-main
 	@include breakpoint($medium)
 		background-image: url('../images/section2-reason2-lg-background.jpg')
 
 //slide "Beautiful views"
 .reasonViews
+	background-color: $background-main
 	@include breakpoint($medium)
 		background-image: url('../images/section2-reason3-lg-background.jpg')
 
 //slide "Reasonable prices"
-.priceTable__item
-	background-repeat: no-repeat
-	padding-left: 50px
-	margin-bottom: 7px
-	font-size: ms(1)
-	line-height: 25px
-	text-transform: uppercase
-	&:last-child
-		margin-bottom: 0
+.reasonPrices
+	background-color: $background-main
+.priceTable
+	&__item
+		margin-bottom: 5px
+		font-size: ms(1)
+		line-height: 30px
+		height: 30px
+		text-transform: uppercase
+		&:last-child
+			margin-bottom: 0
+	&__itemIcon
+		float: left
+		width: 25px
+		height: 25px
+		margin-right: 10px
+		text-align: center
+	svg
+		max-height: 90%
+		max-width: 90%
 .priceAmount
 	float: right
-	color: #0bb8d7
-	font-size: ms(2)
-.priceTable__itemDinner
-	background-image: url('../images/icon-bill.svg')
-.priceTable__itemMuseum
-	background-image: url('../images/icon-museum.svg')
-.priceTable__itemSubway
-	background-image: url('../images/icon-subway.svg')
-.priceTable__itemCoffee
-	background-image: url('../images/icon-coffee.svg')
-.priceTable__itemTaxi
-	background-image: url('../images/icon-taxi.svg')
-.priceTable__itemCocktail
-	background-image: url('../images/icon-cocktail.svg')
+	background: #fff
+	color: $text-color
+	border-radius: 6px
+	width: 40px
+	text-align: center
+
 
 @include breakpoint($medium)
 	.reasonPrices
@@ -62,6 +64,7 @@
 
 //slide "Entertainment"
 .reasonEntertainment
+	background-color: $background-main
 	@extend %txtCenter
 	@include breakpoint($medium)
 		background-image: url('../images/section2-reason5-lg-background.jpg')	
@@ -69,6 +72,9 @@
 	margin-bottom: 5px
 
 //slide "Good location"
+.reasonLocation
+	background-color: $background-main
+	@extend %txtCenter
 #iconLocation
 	display: block
 	margin: 0 auto
@@ -86,6 +92,7 @@
 
 
 //slide "Nice people"
-@include breakpoint($medium)
-	.reasonPeople
+.reasonPeople
+	background-color: $background-main
+	@include breakpoint($medium)
 		background-image: url('../images/section2-reason7-lg-background.jpg')

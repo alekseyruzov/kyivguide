@@ -3663,6 +3663,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/source\/jade\/icons\/iconBill.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconBill.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconBill.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/source\/jade\/icons\/iconCar.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -3681,6 +3692,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconClock.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconClock.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconCocktail.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconCocktail.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconCocktail.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconCoffee.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconCoffee.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconCoffee.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -3725,6 +3758,39 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconPrice.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconPrice.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconSubway.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconSubway.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconSubway.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconTaxi.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconTaxi.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconTaxi.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/icons\/iconTicket.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/icons\/iconTicket.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/icons\/iconTicket.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
