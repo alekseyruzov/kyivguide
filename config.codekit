@@ -3398,6 +3398,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/dist\/images\/anna.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39769,
+		"inputAbbreviatedPath": "\/dist\/images\/anna.jpg",
+		"outputAbbreviatedPath": "\/dist\/images\/anna.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/dist\/images\/clients-castrol.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

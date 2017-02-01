@@ -1,10 +1,34 @@
 
 /*----- Section "Guide" -----*/
 .guide
-	background-image: url('../images/section3-lg-background.jpg')
+	background: $background-main
+.annaLytkinaFace
+	display: none
+	@include breakpoint($medium)
+		display: block
+		border-radius: 50%
+		float: left
+		max-width: 100%
+.blockImage
+	@include breakpoint($medium)
+		@include span(1 of 5)
+	@include breakpoint($medium-portrait)
+		@include span(1 of 3)
+		@include push(1 of 3)
+.blockText
+	@include breakpoint($medium)
+		@include span(4 of 5)
+	@include breakpoint($medium-portrait)
+		@include span(1 of 1)
+		p
+			&:last-child
+				@include txtCenter
+
 .contactIcons
 	@include container(100%)
 	@include breakpoint($medium)
+		@include container(60% left)
+	@include breakpoint($medium-portrait)
 		@include container(60%)
 	&__icon
 		@include span(1 of 6)
