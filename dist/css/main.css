@@ -6,8 +6,6 @@ body {
   font-size: 14px;
   line-height: 1.4;
   font-weight: 300;
-  color: #fff;
-  fill: #fff;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -36,7 +34,6 @@ a {
 h1 {
   font-size: 123px;
   margin: 0;
-  color: #fff;
 }
 @media (min-width: 48em) {
   h1 {
@@ -65,7 +62,6 @@ q {
 }
 
 .question {
-  color: #fff;
   font-size: 26px;
 }
 
@@ -112,11 +108,11 @@ q {
   }
 }
 
-.reasonEntertainment, .reasonLocation, .tourOptions__nameBottomline {
+.reasonEntertainment, .tourOptions__nameBottomline {
   text-align: center;
 }
 
-.deviceRotate, .tourOptions__meetkyiv, .tourOptions__explorekyiv, .tourOptions__feelkyiv, .tourOptions__tastekyiv, .tourOptions__dreamkyiv {
+body, .deviceRotate {
   color: #fff;
   fill: #fff;
 }
@@ -309,6 +305,7 @@ q {
   float: right;
   background: #fff;
   color: #222;
+  fill: #222;
   border-radius: 6px;
   width: 40px;
   text-align: center;
@@ -336,6 +333,7 @@ q {
   .priceTable__item {
     margin-bottom: 15px;
     color: #222;
+    fill: #222;
   }
 }
 .reasonEntertainment {

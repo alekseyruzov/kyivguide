@@ -44,7 +44,7 @@
 .priceAmount
 	float: right
 	background: #fff
-	color: $text-color
+	@include colorNormal
 	border-radius: 6px
 	width: 40px
 	text-align: center
@@ -60,7 +60,7 @@
 		padding: 1em
 	.priceTable__item
 		margin-bottom: 15px
-		color: $text-color
+		@include colorNormal
 
 //slide "Entertainment"
 .reasonEntertainment
@@ -74,7 +74,6 @@
 //slide "Good location"
 .reasonLocation
 	background-color: $background-main
-	@extend %txtCenter
 #iconLocation
 	display: block
 	margin: 0 auto

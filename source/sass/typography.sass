@@ -10,8 +10,7 @@ body
     font-size: ms(0)
     line-height: 1.4
     font-weight: 300
-    color: $text-color-inverted
-    fill: $text-color-inverted
+    @extend %colorInverted
     hyphens: auto
     text-align: justify
     @include breakpoint($medium)
@@ -29,7 +28,6 @@ h1
     @extend .headings
     font-size: ms(14)
     margin: 0
-    color: $text-color-inverted
     @include breakpoint($medium)
         font-size: ms(17)
         margin-top: -60px
@@ -47,5 +45,4 @@ q
     quotes: '\00ab' '\00bb'
 
 .question
-    color: $text-color-inverted
     font-size: ms(4)

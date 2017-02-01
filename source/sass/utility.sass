@@ -37,10 +37,19 @@
 %txtCenter
 	@include txtCenter
 
-//Color inversion
-%colorInverted
+//Color options
+@mixin colorNormal
+	color: $text-color
+	fill: $text-color
+%colorNormal
+	@include colorNormal
+
+@mixin colorInverted
 	color: $text-color-inverted
 	fill: $text-color-inverted
+%colorInverted
+	@include colorInverted
+	
 
 //Animated arrow icon
 .arrow-icon
