@@ -392,48 +392,6 @@ body, .deviceRotate {
   }
 }
 
-@media (min-width: 48em) {
-  .blockImage {
-    box-sizing: border-box;
-    width: 20%;
-    float: left;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-}
-@media screen and (max-width: 48em) and (orientation: portrait) {
-  .blockImage {
-    box-sizing: border-box;
-    width: 33.3333333333%;
-    float: left;
-    padding-left: 3.3333333333%;
-    padding-right: 3.3333333333%;
-    margin-left: 33.3333333333%;
-  }
-}
-
-@media (min-width: 48em) {
-  .blockText {
-    box-sizing: border-box;
-    width: 80%;
-    float: left;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-}
-@media screen and (max-width: 48em) and (orientation: portrait) {
-  .blockText {
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .blockText p:last-child {
-    text-align: center;
-  }
-}
-
 .contactIcons {
   max-width: 100%;
   margin-left: auto;
@@ -456,7 +414,7 @@ body, .deviceRotate {
     clear: both;
   }
 }
-@media screen and (max-width: 48em) and (orientation: portrait) {
+@media screen and (min-width: 48em) and (orientation: portrait) {
   .contactIcons {
     max-width: 60%;
     margin-left: auto;
@@ -474,6 +432,48 @@ body, .deviceRotate {
   float: left;
   padding-left: 1.6666666667%;
   padding-right: 1.6666666667%;
+}
+
+@media (min-width: 48em) {
+  .blockImage {
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media screen and (min-width: 48em) and (orientation: portrait) {
+  .blockImage {
+    box-sizing: border-box;
+    width: 33.3333333333%;
+    float: left;
+    padding-left: 3.3333333333%;
+    padding-right: 3.3333333333%;
+    margin-left: 33.3333333333%;
+  }
+}
+
+@media (min-width: 48em) {
+  .blockText {
+    box-sizing: border-box;
+    width: 80%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media screen and (min-width: 48em) and (orientation: portrait) {
+  .blockText {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .blockText p:last-child {
+    text-align: center;
+  }
 }
 
 /*----- Section "Tour options" ----- */
