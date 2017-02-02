@@ -1,22 +1,22 @@
 
 /*----- Section "Feedback" -----*/
 .feedback
-	@include colorNormal
+	@extend %colorNormal
+	@extend %txtCenter
+
+	&__img
+		@extend %imgRound
+		width: 6em
+		@include breakpoint($medium)
+			width: 7em
+	
+	&__name
+		font-size: ms(1)
+		font-style: italic
+
 	.fp-slidesNav
 		ul
 			li
 				a
 					span
 						background: $text-color
-.feedback__photo
-	border-radius: 50%
-	width: 6em
-	margin-top: 1em
-	margin-left: auto
-	margin-right: auto
-	display: block
-
-
-.feedback__name
-	font-size: ms(1)
-	font-style: italic

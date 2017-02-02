@@ -112,11 +112,11 @@ q {
   }
 }
 
-.reasonEntertainment, .tourOptions__secondline, .tourOptions__detailsItem {
+.reasonEntertainment, .tourOptions__secondline, .tourOptions__detailsItem, .feedback {
   text-align: center;
 }
 
-.guide {
+.guide, .feedback {
   color: #222;
   fill: #222;
 }
@@ -124,6 +124,10 @@ q {
 body, .deviceRotate {
   color: #fff;
   fill: #fff;
+}
+
+.feedback__img {
+  border-radius: 50%;
 }
 
 .arrow-icon {
@@ -395,7 +399,6 @@ body, .deviceRotate {
   .guide__img {
     display: block;
     border-radius: 50%;
-    float: left;
     max-width: 100%;
   }
 }
@@ -498,24 +501,18 @@ body, .deviceRotate {
 }
 
 /*----- Section "Feedback" ----- */
-.feedback {
-  color: #222;
-  fill: #222;
-}
-.feedback .fp-slidesNav ul li a span {
-  background: #222;
-}
-
-.feedback__photo {
-  border-radius: 50%;
+.feedback__img {
   width: 6em;
-  margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
-
+@media (min-width: 48em) {
+  .feedback__img {
+    width: 7em;
+  }
+}
 .feedback__name {
   font-size: 16px;
   font-style: italic;
+}
+.feedback .fp-slidesNav ul li a span {
+  background: #222;
 }
