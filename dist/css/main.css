@@ -70,7 +70,7 @@ q {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: tomato;
+  background: #069;
   z-index: 1100;
   padding-top: 7em;
   display: none;
@@ -110,6 +110,11 @@ q {
 
 .reasonEntertainment, .tourOptions__nameBottomline {
   text-align: center;
+}
+
+.guide {
+  color: #222;
+  fill: #222;
 }
 
 body, .deviceRotate {
@@ -377,7 +382,7 @@ body, .deviceRotate {
 
 /*----- Section "Guide" ----- */
 .guide {
-  background: #069;
+  background: #fff;
 }
 
 .annaLytkinaFace {
