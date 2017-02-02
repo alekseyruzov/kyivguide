@@ -552,6 +552,14 @@ body, .deviceRotate {
 }
 
 /*----- Section "Feedback" ----- */
+.feedback {
+  color: #222;
+  fill: #222;
+}
+.feedback .fp-slidesNav ul li a span {
+  background: #222;
+}
+
 .feedback__photo {
   border-radius: 50%;
   width: 6em;
