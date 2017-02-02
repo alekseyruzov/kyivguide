@@ -18,7 +18,7 @@ body
 .headings
     font-family: 'Rubik', sans-serif
     line-height: 1.2
-    text-align: center
+    @extend %txtCenter
     font-weight: 700
     hyphens: none
 
@@ -30,7 +30,8 @@ h1
     margin: 0
     @include breakpoint($medium)
         font-size: ms(17)
-        margin-top: -60px
+    @include breakpoint($medium-portrait)
+        margin-top: 50px
 h2
     @extend .headings
     font-size: ms(4)

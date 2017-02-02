@@ -2,5 +2,8 @@
 /*----- Section "Tour" -----*/
 .tour
 	background-image: url('../images/section1-lg-background.jpg')
-	text-align: center
-	//@extend %bgFix
+	@extend %txtCenter
+	&__secondLine
+		font-size: ms(4)
+		@include breakpoint($medium)
+			font-size: ms(6)
