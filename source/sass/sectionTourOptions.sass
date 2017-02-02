@@ -1,45 +1,19 @@
 
 /*----- Section "Tour options" -----*/
+.tourOptions
+	@extend %bgTourOpts
 
-.tourOptions__nameBottomline
-	margin-top: -15px
-	font-size: ms(1)
-	@extend %txtCenter
-.tourDetails
-	margin-top: 2em
+	&__secondline
+		margin-top: -15px
+		font-size: ms(1)
+		@extend %txtCenter
 	&__item
+		@include breakpoint($medium)
+			//@include txtCenter
+	&__details
+		margin-top: 2em
+		@include breakpoint($medium)
+			@include container(70%)
+	&__detailsItem
 		@include span(1 of 5)
-		text-align: center
-	@include breakpoint($medium)
-		@include container(70%)
-
-
-//Meet Kiev tour
-.tourOptions__meetkyiv
-	background: #bc1339
-	@include breakpoint($medium)
-		@include txtCenter
-
-//Explore Kiev tour
-.tourOptions__explorekyiv
-	background: purple
-	@include breakpoint($medium)
-		@include txtCenter
-
-//Feel Kiev tour
-.tourOptions__feelkyiv
-	background: teal
-	@include breakpoint($medium)
-		@include txtCenter
-
-//Taste Kiev tour
-.tourOptions__tastekyiv
-	background: #663
-	@include breakpoint($medium)
-		@include txtCenter
-
-//Dream Kiev tour
-.tourOptions__dreamkyiv
-	background: #0048b1
-	@include breakpoint($medium)
-		@include txtCenter
+		@extend %txtCenter

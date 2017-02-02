@@ -90,6 +90,10 @@ q {
   background-position: center;
 }
 
+.tourOptions {
+  background: #226575;
+}
+
 .container {
   max-width: 90%;
   margin-left: auto;
@@ -108,7 +112,7 @@ q {
   }
 }
 
-.reasonEntertainment, .tourOptions__nameBottomline {
+.reasonEntertainment, .tourOptions__secondline, .tourOptions__detailsItem {
   text-align: center;
 }
 
@@ -466,78 +470,31 @@ body, .deviceRotate {
 }
 
 /*----- Section "Tour options" ----- */
-.tourOptions__nameBottomline {
+.tourOptions__secondline {
   margin-top: -15px;
   font-size: 16px;
 }
-
-.tourDetails {
+.tourOptions__details {
   margin-top: 2em;
 }
-.tourDetails__item {
-  box-sizing: border-box;
-  width: 20%;
-  float: left;
-  padding-left: 2%;
-  padding-right: 2%;
-  text-align: center;
-}
 @media (min-width: 48em) {
-  .tourDetails {
+  .tourOptions__details {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
-  .tourDetails:after {
+  .tourOptions__details:after {
     content: " ";
     display: block;
     clear: both;
   }
 }
-
-.tourOptions__meetkyiv {
-  background: #bc1339;
-}
-@media (min-width: 48em) {
-  .tourOptions__meetkyiv {
-    text-align: center;
-  }
-}
-
-.tourOptions__explorekyiv {
-  background: purple;
-}
-@media (min-width: 48em) {
-  .tourOptions__explorekyiv {
-    text-align: center;
-  }
-}
-
-.tourOptions__feelkyiv {
-  background: teal;
-}
-@media (min-width: 48em) {
-  .tourOptions__feelkyiv {
-    text-align: center;
-  }
-}
-
-.tourOptions__tastekyiv {
-  background: #663;
-}
-@media (min-width: 48em) {
-  .tourOptions__tastekyiv {
-    text-align: center;
-  }
-}
-
-.tourOptions__dreamkyiv {
-  background: #0048b1;
-}
-@media (min-width: 48em) {
-  .tourOptions__dreamkyiv {
-    text-align: center;
-  }
+.tourOptions__detailsItem {
+  box-sizing: border-box;
+  width: 20%;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 /*----- Section "Feedback" ----- */

@@ -16,11 +16,14 @@
 	&__icon, &__text
 		text-align: center
 
-//Background fix
+//Background settings
 *
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center
+
+%bgTourOpts
+	background: $bgTourOpts
 
 //Container settings		
 .container
@@ -33,11 +36,10 @@
 //Centering text
 @mixin txtCenter
 	text-align: center
-
 %txtCenter
 	@include txtCenter
 
-//Color options
+//Color settings
 @mixin colorNormal
 	color: $text-color
 	fill: $text-color
