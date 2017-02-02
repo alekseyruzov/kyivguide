@@ -1,37 +1,37 @@
 
 /*----- Section "Guide" -----*/
 .guide
-	background: $background-alt
+	background: $bgMain
 	@extend %colorNormal
-.annaLytkinaFace
-	display: none
-	@include breakpoint($medium)
-		display: block
-		border-radius: 50%
-		float: left
-		max-width: 100%
+	&__img
+		display: none
+		@include breakpoint($medium)
+			display: block
+			border-radius: 50%
+			float: left
+			max-width: 100%
 
-.contactIcons
-	@include container(100%)
-	@include breakpoint($medium)
-		@include container(60% left)
-	@include breakpoint($medium-portrait)
-		@include container(60%)
-	&__icon
-		@include span(1 of 6)
-
-.blockImage
-	@include breakpoint($medium)
-		@include span(1 of 5)
-	@include breakpoint($medium-portrait)
-		@include span(1 of 3)
-		@include push(1 of 3)
+	&__blockImage
+		@include breakpoint($medium)
+			@include span(1 of 5)
+		@include breakpoint($medium-portrait)
+			@include span(1 of 3)
+			@include push(1 of 3)
 		
-.blockText
-	@include breakpoint($medium)
-		@include span(4 of 5)
-	@include breakpoint($medium-portrait)
-		@include span(1 of 1)
-		p
-			&:last-child
-				@include txtCenter
+	&__blockText
+		@include breakpoint($medium)
+			@include span(4 of 5)
+		@include breakpoint($medium-portrait)
+			@include span(1 of 1 no-gutter)
+			p
+				&:last-child
+					@include txtCenter
+
+	&__contactIcons
+		@include breakpoint($medium)
+			@include container(60% left)
+		@include breakpoint($medium-portrait)
+			@include container(70% center)
+			
+	&__contactIcon
+		@include span(1 of 6)

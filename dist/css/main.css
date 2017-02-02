@@ -384,63 +384,19 @@ body, .deviceRotate {
 .guide {
   background: #fff;
 }
-
-.annaLytkinaFace {
+.guide__img {
   display: none;
 }
 @media (min-width: 48em) {
-  .annaLytkinaFace {
+  .guide__img {
     display: block;
     border-radius: 50%;
     float: left;
     max-width: 100%;
   }
 }
-
-.contactIcons {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.contactIcons:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
 @media (min-width: 48em) {
-  .contactIcons {
-    max-width: 60%;
-    margin-left: 0;
-    margin-right: auto;
-  }
-  .contactIcons:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media screen and (min-width: 48em) and (orientation: portrait) {
-  .contactIcons {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .contactIcons:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-.contactIcons__icon {
-  box-sizing: border-box;
-  width: 16.6666666667%;
-  float: left;
-  padding-left: 1.6666666667%;
-  padding-right: 1.6666666667%;
-}
-
-@media (min-width: 48em) {
-  .blockImage {
+  .guide__blockImage {
     box-sizing: border-box;
     width: 20%;
     float: left;
@@ -449,7 +405,7 @@ body, .deviceRotate {
   }
 }
 @media screen and (min-width: 48em) and (orientation: portrait) {
-  .blockImage {
+  .guide__blockImage {
     box-sizing: border-box;
     width: 33.3333333333%;
     float: left;
@@ -458,9 +414,8 @@ body, .deviceRotate {
     margin-left: 33.3333333333%;
   }
 }
-
 @media (min-width: 48em) {
-  .blockText {
+  .guide__blockText {
     box-sizing: border-box;
     width: 80%;
     float: left;
@@ -469,16 +424,45 @@ body, .deviceRotate {
   }
 }
 @media screen and (min-width: 48em) and (orientation: portrait) {
-  .blockText {
+  .guide__blockText {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 10%;
-    padding-right: 10%;
   }
-  .blockText p:last-child {
+  .guide__blockText p:last-child {
     text-align: center;
   }
+}
+@media (min-width: 48em) {
+  .guide__contactIcons {
+    max-width: 60%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .guide__contactIcons:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media screen and (min-width: 48em) and (orientation: portrait) {
+  .guide__contactIcons {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .guide__contactIcons:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+.guide__contactIcon {
+  box-sizing: border-box;
+  width: 16.6666666667%;
+  float: left;
+  padding-left: 1.6666666667%;
+  padding-right: 1.6666666667%;
 }
 
 /*----- Section "Tour options" ----- */
