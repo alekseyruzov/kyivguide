@@ -1,6 +1,6 @@
 
 /*--- sectionTypography ---*/
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100,300|Rubik:300,400,700&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Rubik:700&subset=cyrillic')
 @import '../../bower_components/modular-scale/stylesheets/modular-scale'
 $ms-base: 14px, 16px, 18px
 $ms-ratio: $golden
@@ -30,8 +30,8 @@ h1
     margin: 0
     @include breakpoint($medium)
         font-size: ms(17)
-    @include breakpoint($medium-portrait)
-        margin-top: 50px
+    // @include breakpoint($medium-portrait)
+    //     margin-top: 50px
 h2
     @extend .headings
     font-size: ms(4)

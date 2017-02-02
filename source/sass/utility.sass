@@ -22,8 +22,8 @@
 	background-repeat: no-repeat
 	background-position: center
 
-%bgTourOpts
-	background: $bgTourOpts
+%bgAlt
+	background: $bgAlt
 
 //Container settings		
 .container
@@ -32,6 +32,13 @@
 	top: 4em
 	@include breakpoint($medium)
 		top: 7em
+		@include container(65%)
+	@include breakpoint($medium-portrait)
+		top: 9em
+		@include container(80%)	
+	@include breakpoint($large)
+		top: 9em
+		@include container(50%)	
 
 //Centering text
 @mixin txtCenter

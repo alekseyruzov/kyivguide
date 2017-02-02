@@ -1,46 +1,57 @@
 
 /*----- Section "Reasons" -----*/		
+.reasons
+	@extend %bgAlt
+	&__prices
+		&Table
+			@include breakpoint($medium)
+				@include container(60%)
+				background: $background-layer
+				border-radius: 8px
+				padding: 1em
+			&Item
+				@include breakpoint($medium)	
+					margin-bottom: 15px
+					@include colorNormal
+				margin-bottom: 5px
+				font-size: ms(1)
+				line-height: 30px
+				height: 30px
+				text-transform: uppercase
+				&:last-child
+					margin-bottom: 0
+				&Icon
+					float: left
+					width: 25px
+					height: 25px
+					margin-right: 10px
+					text-align: center
+				svg
+					max-height: 90%
+					max-width: 90%
 
-//slide "Rich history and culture"
-.reasonHystory
-	background-color: $bgAlt
+	&__entertainment
+		@extend %txtCenter
+
+		&List
+			&Item
+				margin-bottom: 5px
+
 	@include breakpoint($medium)
-		background-image: url('../images/section2-reason1-lg-background.jpg')
+		&__history
+			background-image: url('../images/section2-reason1-lg-background.jpg')
+		&__atmosphere
+			background-image: url('../images/section2-reason2-lg-background.jpg')
+		&__views
+			background-image: url('../images/section2-reason3-lg-background.jpg')
+		&__prices
+			background-image: url('../images/section2-reason4-lg-background.jpg')
+		&__entertainment
+			background-image: url('../images/section2-reason5-lg-background.jpg')
+		&__location
+		&__people
+			background-image: url('../images/section2-reason7-lg-background.jpg')
 
-
-//slide "Unique atmosphere"
-.reasonAtmosphere
-	background-color: $bgAlt
-	@include breakpoint($medium)
-		background-image: url('../images/section2-reason2-lg-background.jpg')
-
-//slide "Beautiful views"
-.reasonViews
-	background-color: $bgAlt
-	@include breakpoint($medium)
-		background-image: url('../images/section2-reason3-lg-background.jpg')
-
-//slide "Reasonable prices"
-.reasonPrices
-	background-color: $bgAlt
-.priceTable
-	&__item
-		margin-bottom: 5px
-		font-size: ms(1)
-		line-height: 30px
-		height: 30px
-		text-transform: uppercase
-		&:last-child
-			margin-bottom: 0
-	&__itemIcon
-		float: left
-		width: 25px
-		height: 25px
-		margin-right: 10px
-		text-align: center
-	svg
-		max-height: 90%
-		max-width: 90%
 .priceAmount
 	float: right
 	background: #fff
@@ -49,45 +60,11 @@
 	width: 40px
 	text-align: center
 
-
-@include breakpoint($medium)
-	.reasonPrices
-		background-image: url('../images/section2-reason4-lg-background.jpg')
-	.priceTable
-		@include container(50%)
-		background: $background-layer
-		border-radius: 8px
-		padding: 1em
-	.priceTable__item
-		margin-bottom: 15px
-		@include colorNormal
-
-//slide "Entertainment"
-.reasonEntertainment
-	background-color: $bgAlt
-	@extend %txtCenter
-	@include breakpoint($medium)
-		background-image: url('../images/section2-reason5-lg-background.jpg')	
-.entertainmentList__item
-	margin-bottom: 5px
-
-//slide "Good location"
-.reasonLocation
-	background-color: $bgAlt
 #iconLocation
 	display: block
 	margin: 0 auto
-
-@include breakpoint($medium)
-	#iconLocation
+	@include breakpoint($medium)
 		width: 180px
 		float: left
 		margin-right: 40px
 		margin-top: -20px
-
-
-//slide "Nice people"
-.reasonPeople
-	background-color: $bgAlt
-	@include breakpoint($medium)
-		background-image: url('../images/section2-reason7-lg-background.jpg')
