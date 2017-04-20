@@ -2971,11 +2971,37 @@
 		"oAP": "\/dist\/prepros.cfg",
 		"oF": 0
 		},
-	"\/source\/jade\/favicon.html": {
-		"ft": 8192,
+	"\/source\/jade\/content\/en-atmosphere.jade": {
+		"cOD": 1,
+		"ft": 512,
 		"oA": 1,
-		"oAP": "\/dist\/jade\/favicon.html",
-		"oF": 1
+		"oAP": "\/dist\/jade\/content\/en-atmosphere.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/content\/en-history.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/content\/en-history.html",
+		"oF": 1,
+		"oS": 0
+		},
+	"\/source\/jade\/content\/en-prices.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/content\/en-prices.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/content\/en-views.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/content\/en-views.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/source\/jade\/head.jade": {
 		"cOD": 1,
@@ -3815,7 +3841,7 @@
 	"creationDate": 514281883,
 	"displayValue": "kyivguide",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_teal",
+	"iconImageName": "brackets_brown",
 	"lastBuiltDate": 514285990
 	},
 "projectSettings": {
@@ -5670,7 +5696,7 @@
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -5723,7 +5749,7 @@
 		"shouldRunBless": 0
 		},
 	"languageDefaultsSVG": {
-		"autoOutputAction": 2,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.svg",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",

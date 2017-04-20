@@ -1,8 +1,7 @@
-@charset "UTF-8";
-/*--- sectionTypography --- */
+/*--- sectionTypography ---*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300|Rubik:700&subset=cyrillic");
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 300;
@@ -11,6 +10,7 @@ body {
           hyphens: auto;
   text-align: justify;
 }
+
 @media (min-width: 48em) {
   body {
     font-size: 23px;
@@ -18,7 +18,7 @@ body {
 }
 
 .headings, h1, h2 {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.2;
   font-weight: 700;
   -webkit-hyphens: none;
@@ -34,6 +34,7 @@ h1 {
   font-size: 123px;
   margin: 0;
 }
+
 @media (min-width: 48em) {
   h1 {
     font-size: 200px;
@@ -44,6 +45,7 @@ h2 {
   font-size: 26px;
   margin-top: 0.5em;
 }
+
 @media (min-width: 48em) {
   h2 {
     font-size: 47px;
@@ -56,14 +58,14 @@ ul {
 }
 
 q {
-  quotes: "«" "»";
+  quotes: '\00ab' '\00bb';
 }
 
 .question {
   font-size: 26px;
 }
 
-/*----- Utility ----- */
+/*----- Utility -----*/
 .deviceRotate {
   position: absolute;
   height: 100%;
@@ -73,11 +75,13 @@ q {
   padding-top: 7em;
   display: none;
 }
+
 @media screen and (max-height: 30em) and (orientation: landscape) {
   .deviceRotate {
     display: block;
   }
 }
+
 .deviceRotate__icon, .deviceRotate__text {
   text-align: center;
 }
@@ -88,7 +92,7 @@ q {
   background-position: center;
 }
 
-.reasons, .tourOptions {
+.reasons {
   background: #226575;
 }
 
@@ -99,11 +103,13 @@ q {
   position: relative;
   top: 4em;
 }
+
 .container:after {
   content: " ";
   display: block;
   clear: both;
 }
+
 @media (min-width: 48em) {
   .container {
     top: 7em;
@@ -117,6 +123,7 @@ q {
     clear: both;
   }
 }
+
 @media screen and (min-width: 48em) and (orientation: portrait) {
   .container {
     top: 9em;
@@ -130,6 +137,7 @@ q {
     clear: both;
   }
 }
+
 @media (min-width: 80em) {
   .container {
     top: 9em;
@@ -172,15 +180,17 @@ body, .deviceRotate {
   height: 50px;
   width: 50px;
   border: 1px solid white;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
+
 .arrow-icon:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
 .arrow-icon:after, .arrow-icon:before {
-  content: "";
+  content: '';
   position: absolute;
   top: -1px;
   left: -1px;
@@ -189,11 +199,13 @@ body, .deviceRotate {
   width: 100%;
   height: 100%;
 }
+
 .arrow-icon:after {
   -webkit-animation: sonar 5s infinite 3s;
           animation: sonar 5s infinite 3s;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
+
 .arrow-icon:before {
   -webkit-animation: sonar 5s infinite 1.5s;
           animation: sonar 5s infinite 1.5s;
@@ -225,7 +237,8 @@ body, .deviceRotate {
     opacity: 0;
   }
 }
-/*----- Nav ----- */
+
+/*----- Nav -----*/
 .slicknav_menu, #menu {
   position: fixed;
   width: 100%;
@@ -247,23 +260,27 @@ body, .deviceRotate {
   padding: 0;
   margin: 0;
 }
+
 @media (min-width: 48em) {
   #menu {
     display: block;
     top: 4em;
   }
 }
+
 #menu .menu__item {
   display: inline-block;
   margin: 0 5px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.5);
 }
+
 @media (min-width: 48em) {
   #menu .menu__item {
     font-size: 18px;
   }
 }
+
 #menu .menu__item a {
   display: block;
   padding: 5px 15px;
@@ -271,9 +288,11 @@ body, .deviceRotate {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 #menu .menu__item.active {
   background: rgba(0, 0, 0, 0.15);
 }
+
 #menu .menu__item.active a {
   color: #fff;
 }
@@ -286,20 +305,22 @@ body, .deviceRotate {
   font-size: 3rem;
 }
 
-/*----- Section "Tour" ----- */
+/*----- Section "Tour" -----*/
 .tour {
   background-image: url("../images/section1-lg-background.jpg");
 }
+
 .tour__secondLine {
   font-size: 26px;
 }
+
 @media (min-width: 48em) {
   .tour__secondLine {
     font-size: 37px;
   }
 }
 
-/*----- Section "Reasons" ----- */
+/*----- Section "Reasons" -----*/
 @media (min-width: 48em) {
   .reasons__pricesTable {
     max-width: 60%;
@@ -315,6 +336,7 @@ body, .deviceRotate {
     clear: both;
   }
 }
+
 .reasons__pricesTableItem {
   margin-bottom: 5px;
   font-size: 16px;
@@ -322,6 +344,7 @@ body, .deviceRotate {
   height: 30px;
   text-transform: uppercase;
 }
+
 @media (min-width: 48em) {
   .reasons__pricesTableItem {
     margin-bottom: 15px;
@@ -329,9 +352,11 @@ body, .deviceRotate {
     fill: #222;
   }
 }
+
 .reasons__pricesTableItem:last-child {
   margin-bottom: 0;
 }
+
 .reasons__pricesTableItemIcon {
   float: left;
   width: 25px;
@@ -339,13 +364,16 @@ body, .deviceRotate {
   margin-right: 10px;
   text-align: center;
 }
+
 .reasons__pricesTableItem svg {
   max-height: 90%;
   max-width: 90%;
 }
+
 .reasons__entertainmentListItem {
   margin-bottom: 5px;
 }
+
 @media (min-width: 48em) {
   .reasons__history {
     background-image: url("../images/section2-reason1-lg-background.jpg");
@@ -381,6 +409,7 @@ body, .deviceRotate {
   display: block;
   margin: 0 auto;
 }
+
 @media (min-width: 48em) {
   #iconLocation {
     width: 180px;
@@ -390,13 +419,15 @@ body, .deviceRotate {
   }
 }
 
-/*----- Section "Guide" ----- */
+/*----- Section "Guide" -----*/
 .guide {
   background: #fff;
 }
+
 .guide__img {
   display: none;
 }
+
 @media (min-width: 48em) {
   .guide__img {
     display: block;
@@ -404,6 +435,7 @@ body, .deviceRotate {
     max-width: 100%;
   }
 }
+
 @media (min-width: 48em) {
   .guide__blockImage {
     box-sizing: border-box;
@@ -413,6 +445,7 @@ body, .deviceRotate {
     padding-right: 2%;
   }
 }
+
 @media screen and (min-width: 48em) and (orientation: portrait) {
   .guide__blockImage {
     box-sizing: border-box;
@@ -423,6 +456,7 @@ body, .deviceRotate {
     margin-left: 33.3333333333%;
   }
 }
+
 @media (min-width: 48em) {
   .guide__blockText {
     box-sizing: border-box;
@@ -432,6 +466,7 @@ body, .deviceRotate {
     padding-right: 2%;
   }
 }
+
 @media screen and (min-width: 48em) and (orientation: portrait) {
   .guide__blockText {
     box-sizing: border-box;
@@ -442,6 +477,7 @@ body, .deviceRotate {
     text-align: center;
   }
 }
+
 @media (min-width: 48em) {
   .guide__contactIcons {
     max-width: 60%;
@@ -454,6 +490,7 @@ body, .deviceRotate {
     clear: both;
   }
 }
+
 @media screen and (min-width: 48em) and (orientation: portrait) {
   .guide__contactIcons {
     max-width: 70%;
@@ -466,6 +503,7 @@ body, .deviceRotate {
     clear: both;
   }
 }
+
 .guide__contactIcon {
   box-sizing: border-box;
   width: 16.6666666667%;
@@ -473,6 +511,7 @@ body, .deviceRotate {
   padding-left: 1.6666666667%;
   padding-right: 1.6666666667%;
 }
+
 @media (min-width: 48em) {
   .guide .container {
     max-width: 70%;
@@ -486,14 +525,21 @@ body, .deviceRotate {
   }
 }
 
-/*----- Section "Tour options" ----- */
+/*----- Section "Tour options" -----*/
+.tourOptions {
+  background: -webkit-linear-gradient(rgba(51, 81, 51, 0.6), rgba(0, 0, 0, 0.812)), url("../images/section4-lg-background.jpg");
+  background: linear-gradient(rgba(51, 81, 51, 0.6), rgba(0, 0, 0, 0.812)), url("../images/section4-lg-background.jpg");
+}
+
 .tourOptions__secondLine {
   margin-top: -15px;
   font-size: 16px;
 }
+
 .tourOptions__details {
   margin-top: 2em;
 }
+
 @media (min-width: 48em) {
   .tourOptions__details {
     max-width: 75%;
@@ -506,6 +552,7 @@ body, .deviceRotate {
     clear: both;
   }
 }
+
 .tourOptions__detailsItem {
   box-sizing: border-box;
   width: 20%;
@@ -514,19 +561,22 @@ body, .deviceRotate {
   padding-right: 2%;
 }
 
-/*----- Section "Feedback" ----- */
+/*----- Section "Feedback" -----*/
 .feedback__img {
   width: 6em;
 }
+
 @media (min-width: 48em) {
   .feedback__img {
     width: 7em;
   }
 }
+
 .feedback__name {
   font-size: 16px;
   font-style: italic;
 }
+
 .feedback .fp-slidesNav ul li a span {
   background: #222;
 }
