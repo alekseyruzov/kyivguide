@@ -2971,35 +2971,163 @@
 		"oAP": "\/dist\/prepros.cfg",
 		"oF": 0
 		},
-	"\/source\/jade\/content\/en-atmosphere.jade": {
+	"\/source\/jade\/en\/content\/en-guide.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/dist\/jade\/content\/en-atmosphere.html",
+		"oAP": "\/dist\/jade\/en\/content\/en-guide.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/source\/jade\/content\/en-history.jade": {
+	"\/source\/jade\/en\/content\/reasons\/en-atmosphere.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/dist\/jade\/content\/en-history.html",
+		"oAP": "\/dist\/jade\/en\/content\/reasons\/en-atmosphere.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/reasons\/en-entertainment.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/reasons\/en-entertainment.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/reasons\/en-history.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/reasons\/en-history.html",
 		"oF": 1,
 		"oS": 0
 		},
-	"\/source\/jade\/content\/en-prices.jade": {
+	"\/source\/jade\/en\/content\/reasons\/en-location.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/dist\/jade\/content\/en-prices.html",
+		"oAP": "\/dist\/jade\/en\/content\/reasons\/en-location.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/source\/jade\/content\/en-views.jade": {
+	"\/source\/jade\/en\/content\/reasons\/en-people.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/dist\/jade\/content\/en-views.html",
+		"oAP": "\/dist\/jade\/en\/content\/reasons\/en-people.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/reasons\/en-prices.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/reasons\/en-prices.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/reasons\/en-views.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/reasons\/en-views.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/tourOptions\/en-dreamKyiv.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/tourOptions\/en-dreamKyiv.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/tourOptions\/en-exploreKyiv.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/tourOptions\/en-exploreKyiv.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/tourOptions\/en-feelKyiv.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/tourOptions\/en-feelKyiv.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/tourOptions\/en-meetKyiv.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/tourOptions\/en-meetKyiv.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/content\/tourOptions\/en-tasteKyiv.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/content\/tourOptions\/en-tasteKyiv.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/en-index.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/dist\/index.html",
+		"oF": 3,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/en-menu.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/en-menu.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/en-sectionFeedback.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/en-sectionFeedback.html",
+		"oF": 1,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/en-sectionGuide.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/en-sectionGuide.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/en-sectionReasons.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/en-sectionReasons.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/en-sectionTour.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/en-sectionTour.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/jade\/en\/en-sectionTourOptions.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/dist\/jade\/en\/en-sectionTourOptions.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -3008,166 +3136,6 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/dist\/jade\/head.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconBill.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconBill.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconCar.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconCar.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconClock.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconClock.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconCocktail.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconCocktail.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconCoffee.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconCoffee.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconDeviceRotate.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconDeviceRotate.html",
-		"oF": 1,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconDistance.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconDistance.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconLocation.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconLocation.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconPrice.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconPrice.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconSubway.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconSubway.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconTaxi.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconTaxi.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconTicket.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconTicket.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/icons\/iconWalk.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/icons\/iconWalk.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/index.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/dist\/index.html",
-		"oF": 2,
-		"oS": 0
-		},
-	"\/source\/jade\/menu.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/menu.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/sectionFeedback.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/sectionFeedback.html",
-		"oF": 1,
-		"oS": 0
-		},
-	"\/source\/jade\/sectionGuide.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/sectionGuide.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/sectionReasons.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/sectionReasons.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/sectionTour.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/sectionTour.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/source\/jade\/sectionTourOptions.jade": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/dist\/jade\/sectionTourOptions.html",
 		"oF": 0,
 		"oS": 0
 		},
