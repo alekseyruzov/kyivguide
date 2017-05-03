@@ -38,13 +38,21 @@
 		@include container(80%)	
 	@include breakpoint($large)
 		top: 9em
-		@include container(50%)	
+		@include container(50%)
+	&_centered
+		@extend %txtCenter
 
 //Centering text
 @mixin txtCenter
 	text-align: center
 %txtCenter
 	@include txtCenter
+
+//Left aligned text
+@mixin txtLeft
+	text-align: left
+%txtLeft
+	@include txtLeft
 
 //Color settings
 @mixin colorNormal
@@ -107,6 +115,7 @@
 //Buttons
 .button
 	background-color: #00bfff
+	border: none
 	border-radius: 4px
 	color: #fff
 	text-decoration: none
@@ -114,5 +123,6 @@
 	height: 64px
 	line-height: 64px
 	padding: 0 1em
-	&--linkOut
-		background-image: url("/images/foreign.svg")
+	&_centered
+		margin-left: auto
+		margin-right: auto

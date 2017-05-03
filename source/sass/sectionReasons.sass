@@ -31,9 +31,10 @@
 					max-width: 90%
 
 	&__entertainment
-		@extend %txtCenter
+		//@extend %txtCenter
 
 		&List
+			@extend %txtCenter
 			&Item
 				margin-bottom: 5px
 
@@ -50,6 +51,10 @@
 			background-image: url('../images/section2-reason5-lg-background.jpg')
 		&__people
 			background-image: url('../images/section2-reason7-lg-background.jpg')
+
+	&__people
+		p
+			@extend %txtLeft
 
 .priceAmount
 	float: right
