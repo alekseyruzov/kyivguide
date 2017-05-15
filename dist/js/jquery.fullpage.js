@@ -809,7 +809,7 @@
         * Creates the control arrows for the given section
         */
         function createSlideArrows(section){
-            section.find(SLIDES_WRAPPER_SEL).after('<div class="' + SLIDES_ARROW_PREV + '"></div><div class="' + SLIDES_ARROW_NEXT + '"></div>');
+            section.find(SLIDES_WRAPPER_SEL).after('<div class="' + SLIDES_ARROW_PREV + '"><svg viewbox="0 0 512 512"><use xlink:href="#icon-left-chevron"></use></svg></div><div class="' + SLIDES_ARROW_NEXT + '"><svg viewbox="0 0 512 512"><use xlink:href="#icon-right-chevron"></use></svg></div>');
 
             if(options.controlArrowColor!='#fff'){
                 section.find(SLIDES_ARROW_NEXT_SEL).css('border-color', 'transparent transparent transparent '+options.controlArrowColor);
