@@ -1,0 +1,25 @@
+{
+  "name": "kyivguide",
+  "authors": [
+    "alekseyruzov <aleksey.ruzov@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "modular-scale": "^2.1.3",
+    "slicknav": "^1.0.10",
+    "susy": "^2.2.12",
+    "normalize-scss": "^3.0.3"
+  }
+}

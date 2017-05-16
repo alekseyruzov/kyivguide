@@ -164,7 +164,6 @@ q {
 
 .guide, .feedback {
   color: #222;
-  fill: #222;
 }
 
 body, .deviceRotate {
@@ -376,7 +375,6 @@ body, .deviceRotate {
   .reasons__pricesTableItem {
     margin-bottom: 15px;
     color: #222;
-    fill: #222;
   }
 }
 
@@ -426,7 +424,6 @@ body, .deviceRotate {
   float: right;
   background: #fff;
   color: #222;
-  fill: #222;
   border-radius: 6px;
   width: 40px;
   text-align: center;
@@ -605,6 +602,10 @@ body, .deviceRotate {
 .feedback__name {
   font-size: 16px;
   font-style: italic;
+}
+
+.feedback .fp-controlArrow svg {
+  fill: #272727;
 }
 
 .feedback .fp-slidesNav ul li a span {
